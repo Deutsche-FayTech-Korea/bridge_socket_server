@@ -1,0 +1,74 @@
+// index.html (간단한 전자칠판 클라이언트)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>전자칠판</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { border: 1px solid #ccc; display: block; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <canvas id="board" width="800" height="600"></canvas>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const canvas = document.getElementById('board');
+    const ctx = canvas.getContext('2d');
+
+    let drawing = false;
+    let points = [];
+
+    canvas.addEventListener('mousedown', (e) => {
+      drawing = true;
+      points = [getPos(e)];
+    });
+
+    canvas.addEventListener('mousemove', (e) => {
+      if (!drawing) return;
+      const pos = getPos(e);
+      points.push(pos);
+      drawLine(points[points.length - 2], pos, '#000', 2);
+    });
+
+    canvas.addEventListener('mouseup', () => {
+      drawing = false;
+      if (points.length > 1) {
+        socket.emit('object_add', {
+          id: crypto.randomUUID(),
+          objectType: 'line',
+          style: { color: '#000', size: 2 },
+          points
+        });
+      }
+      points = [];
+    });
+
+    function getPos(e) {
+      const rect = canvas.getBoundingClientRect();
+      return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+    }
+
+    function drawLine(p1, p2, color, size) {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = size;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y);
+      ctx.lineTo(p2.x, p2.y);
+      ctx.stroke();
+    }
+
+    socket.on('object_add', (data) => {
+      if (data.objectType === 'line') {
+        const { points, style } = data;
+        for (let i = 1; i < points.length; i++) {
+          drawLine(points[i - 1], points[i], style.color, style.size);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
