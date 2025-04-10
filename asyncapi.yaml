@@ -2,16 +2,58 @@ asyncapi: 3.0.0
 info:
   title: WhiteBoard 0.1.0
   version: '0.1.0'
+
 channels:
-  hello:
-    address: 'hello'
+  object_add:
+    address: 'object_add'
     messages:
-      sayHelloMessage:
+      objectAddMessage:
+        title: 선 그리기 데이터
+        summary: 선을 그릴 때 전송되는 메시지
+        contentType: application/json
         payload:
-          type: string
-          pattern: '^hello .+$'
+          type: object
+          required:
+            - id
+            - objectType
+            - style
+            - points
+          properties:
+            id:
+              type: string
+              format: uuid
+              description: 고유한 오브젝트 ID
+            objectType:
+              type: string
+              enum: [line]
+            style:
+              type: object
+              properties:
+                color:
+                  type: string
+                size:
+                  type: integer
+            points:
+              type: array
+              items:
+                type: object
+                properties:
+                  x:
+                    type: number
+                  y:
+                    type: number
+
 operations:
-  receiveHello:
-    action: 'receive'
+  sendObjectAdd:
+    action: send
     channel:
-      $ref: '#/channels/hello'
+      $ref: '#/channels/object_add'
+    messages:
+      - $ref: '#/channels/object_add/messages/objectAddMessage'
+
+  receiveObjectAdd:
+    action: receive
+    channel:
+      $ref: '#/channels/object_add'
+    messages:
+      - $ref: '#/channels/object_add/messages/objectAddMessage'
