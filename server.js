@@ -51,13 +51,13 @@ io.on('connection', (socket) => {
     const created = createSession(roomId);
     socket.emit('room_created', { roomId, created });
   });
-
+ 
   // 방 참여
   socket.on('join_room', ({ roomId, userName }) => {
     const session = sessionCache.get(roomId);
     if (!session) {
       socket.emit('error', '❌ 세션이 존재하지 않습니다.');
-      return;
+      return;  
     }
 
     socket.join(roomId);
