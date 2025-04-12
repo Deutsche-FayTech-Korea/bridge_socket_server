@@ -1,74 +1,280 @@
-// index.html (간단한 전자칠판 클라이언트)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>전자칠판</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>전자칠판 - 방 생성 + 커서</title>
   <style>
-    body { margin: 0; overflow: hidden; }
-    canvas { border: 1px solid #ccc; display: block; margin: 0 auto; }
+    body { margin: 0; overflow: hidden; font-family: sans-serif; }
+    #roomSelector {
+      position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+      background: white; padding: 10px; border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 10;
+    }
+    #toolbar {
+      position: absolute; top: 10px; left: 10px; background: white; padding: 10px;
+      border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); z-index: 10;
+      display: flex; gap: 10px; align-items: center;
+    }
+    canvas { border: 1px solid #ccc; display: block; margin: 0 auto; margin-top: 80px; }
+    .cursor-label {
+      position: absolute;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+    }
+    .cursor-dot {
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
   </style>
 </head>
 <body>
+  <div id="roomSelector">
+    <input type="text" id="roomInput" placeholder="방 이름" />
+    <input type="text" id="userInput" placeholder="닉네임" />
+    <button id="createBtn">방 만들기</button>
+    <button id="joinBtn">입장</button>
+  </div>
+
+  <div id="toolbar" style="display: none;">
+    <label for="color">색상:</label>
+    <input type="color" id="color" value="#000000" />
+    <label for="size">굵기:</label>
+    <input type="range" id="size" min="2" max="30" value="8" />
+    <button id="eraser">지우개</button>
+  </div>
+
   <canvas id="board" width="800" height="600"></canvas>
+  <div id="cursor-layer"></div>
+
   <script src="/socket.io/socket.io.js"></script>
   <script>
     const socket = io();
+
     const canvas = document.getElementById('board');
     const ctx = canvas.getContext('2d');
+    const cursorLayer = document.getElementById('cursor-layer');
 
+    const roomInput = document.getElementById('roomInput');
+    const userInput = document.getElementById('userInput');
+    const joinBtn = document.getElementById('joinBtn');
+    const createBtn = document.getElementById('createBtn');
+    const toolbar = document.getElementById('toolbar');
+    const colorPicker = document.getElementById('color');
+    const sizeSlider = document.getElementById('size');
+    const eraserBtn = document.getElementById('eraser');
+
+    let roomId = null;
+    let userName = null;
+    let isJoined = false;
     let drawing = false;
     let points = [];
+    let strokes = [];
+    let isEraser = false;
+    const cursors = {};
+    const cursorTimestamps = {};
 
-    canvas.addEventListener('mousedown', (e) => {
-      drawing = true;
-      points = [getPos(e)];
+    // 🛠 방 생성
+    createBtn.addEventListener('click', () => {
+      const r = roomInput.value.trim();
+      if (!r) return alert('방 이름을 입력하세요');
+      socket.emit('create_room', r);
     });
 
-    canvas.addEventListener('mousemove', (e) => {
-      if (!drawing) return;
-      const pos = getPos(e);
-      points.push(pos);
-      drawLine(points[points.length - 2], pos, '#000', 2);
+    socket.on('room_created', ({ roomId, created }) => {
+      alert(created ? `방 ${roomId} 생성됨` : `이미 존재하는 방입니다`);
     });
 
-    canvas.addEventListener('mouseup', () => {
-      drawing = false;
-      if (points.length > 1) {
-        socket.emit('object_add', {
-          id: crypto.randomUUID(),
-          objectType: 'line',
-          style: { color: '#000', size: 2 },
-          points
-        });
-      }
-      points = [];
+    // 🚪 방 입장
+    joinBtn.addEventListener('click', () => {
+      const r = roomInput.value.trim();
+      const u = userInput.value.trim();
+      if (!r || !u) return alert('방 이름과 닉네임을 모두 입력하세요');
+
+      roomId = r;
+      userName = u;
+
+      socket.emit('join_room', { roomId, userName });
     });
 
-    function getPos(e) {
-      const rect = canvas.getBoundingClientRect();
-      return { x: e.clientX - rect.left, y: e.clientY - rect.top };
-    }
+    socket.on('stroke_sync', (strokeList) => {
+      isJoined = true;
+      strokes = strokeList;
+      redrawCanvas();
+      document.getElementById('roomSelector').style.display = 'none';
+      toolbar.style.display = 'flex';
+    });
 
-    function drawLine(p1, p2, color, size) {
-      ctx.strokeStyle = color;
-      ctx.lineWidth = size;
-      ctx.lineCap = 'round';
-      ctx.beginPath();
-      ctx.moveTo(p1.x, p1.y);
-      ctx.lineTo(p2.x, p2.y);
-      ctx.stroke();
-    }
+    socket.on('object_add', (stroke) => {
+      if (!isJoined) return;
+      strokes.push(stroke);
+      redrawCanvas();
+    });
 
-    socket.on('object_add', (data) => {
-      if (data.objectType === 'line') {
-        const { points, style } = data;
-        for (let i = 1; i < points.length; i++) {
-          drawLine(points[i - 1], points[i], style.color, style.size);
+    socket.on('object_delete', (id) => {
+      if (!isJoined) return;
+      strokes = strokes.filter(s => s.id !== id);
+      redrawCanvas();
+    });
+
+    socket.on('error', (msg) => alert(msg));
+    socket.on('user_joined', ({ userName }) => console.log(`${userName} 입장`));
+    socket.on('user_left', (name) => {
+      delete cursors[name];
+      delete cursorTimestamps[name];
+      renderCursors();
+    });
+
+    // 커서 이동
+    canvas.addEventListener('pointermove', (e) => {
+      if (!isJoined) return;
+      socket.emit('cursor_move', {
+        roomId,
+        userName,
+        x: e.clientX,
+        y: e.clientY
+      });
+      if (!drawing || isEraser) return;
+      points.push(getPoint(e));
+      redrawCanvas();
+    });
+
+    socket.on('cursor_update', ({ userName, x, y }) => {
+      cursors[userName] = { x, y };
+      cursorTimestamps[userName] = Date.now();
+      renderCursors();
+    });
+
+    setInterval(() => {
+      const now = Date.now();
+      for (const [name, time] of Object.entries(cursorTimestamps)) {
+        if (now - time > 10000) {
+          delete cursors[name];
+          delete cursorTimestamps[name];
         }
       }
+      renderCursors();
+    }, 2000);
+
+    canvas.addEventListener('pointerdown', (e) => {
+      if (!isJoined) return;
+      if (isEraser) {
+        const point = getPoint(e);
+        const hit = strokes.find(stroke => isPointNearStroke(point, stroke.points));
+        if (hit) {
+          strokes = strokes.filter(s => s.id !== hit.id);
+          socket.emit('object_delete', { roomId, strokeId: hit.id });
+          redrawCanvas();
+        }
+      } else {
+        drawing = true;
+        points = [getPoint(e)];
+      }
     });
+
+    canvas.addEventListener('pointerup', () => {
+  if (!isJoined || !drawing) return;
+  if (points.length > 1) {
+    const stroke = {
+      id: crypto.randomUUID(),
+      objectType: 'line',
+      style: {
+        color: colorPicker.value,
+        size: parseInt(sizeSlider.value),
+      },
+      points
+    };
+    strokes.push(stroke);          // ✅ 먼저 내 local에 반영
+    redrawCanvas();                // ✅ 즉시 다시 그리기
+    socket.emit('object_add', { roomId, stroke }); // 서버에도 전송
+  }
+  drawing = false;
+  points = [];
+});
+
+    eraserBtn.addEventListener('click', () => isEraser = true);
+    colorPicker.addEventListener('change', () => isEraser = false);
+    sizeSlider.addEventListener('input', () => isEraser = false);
+
+    function getPoint(e) {
+      const rect = canvas.getBoundingClientRect();
+      return {
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+        pressure: e.pressure || 0.5
+      };
+    }
+
+    function isPointNearStroke(point, strokePoints, threshold = 10) {
+      return strokePoints.some(p => {
+        const dx = p.x - point.x;
+        const dy = p.y - point.y;
+        return Math.sqrt(dx * dx + dy * dy) < threshold;
+      });
+    }
+
+    function drawStroke(rawPoints, color, style) {
+      const strokePoints = rawPoints.map(p => [p.x, p.y, p.pressure]);
+      const outline = getStroke(strokePoints, style);
+
+      if (outline.length < 1) return;
+
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(outline[0][0], outline[0][1]);
+      for (let i = 1; i < outline.length; i++) {
+        ctx.lineTo(outline[i][0], outline[i][1]);
+      }
+      ctx.closePath();
+      ctx.fill();
+  }
+
+
+    function redrawCanvas() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // 모든 기존 stroke
+      for (const stroke of strokes) {
+        drawStroke(stroke.points, stroke.style.color, stroke.style);
+      }
+
+      // ✨ 현재 진행 중인 stroke 프리뷰 (drawing 중일 때)
+      if (drawing && points.length > 0 && !isEraser) {
+        const previewStyle = {
+          color: colorPicker.value,
+          size: parseInt(sizeSlider.value),
+          thinning: 0.5,
+          smoothing: 0.5,
+          taperStart: 0,
+          taperEnd: 0
+        };
+        drawStroke(points, previewStyle.color, previewStyle);
+      }
+    }
+
+
+    function renderCursors() {
+      cursorLayer.innerHTML = '';
+      for (const [name, pos] of Object.entries(cursors)) {
+        if (name === userName) continue;
+        const el = document.createElement('div');
+        el.className = 'cursor-label';
+        el.style.left = pos.x + 'px';
+        el.style.top = pos.y + 'px';
+        el.innerHTML = `<div class="cursor-dot"></div>${name}`;
+        cursorLayer.appendChild(el);
+      }
+    }
   </script>
 </body>
 </html>

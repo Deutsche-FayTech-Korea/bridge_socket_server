@@ -4,6 +4,26 @@ info:
   version: '0.1.0'
 
 channels:
+  join_room:
+    address: 'join_room'
+    messages:
+      joinRoomMessage:
+        title: 방 참가 요청
+        summary: 사용자가 방에 참가할 때 전송되는 메시지
+        contentType: application/json
+        payload:
+          type: object
+          description: 참가할 방의 고유 ID (roomId)
+          properties:
+            roomId:
+              type: string
+              description: 참가할 방의 고유 ID
+              example: "room123"
+            userName:
+              type: string
+              description: 참가자 이름 또는 닉네임
+              example: "홍길동"
+
   object_add:
     address: 'object_add'
     messages:
@@ -25,7 +45,16 @@ channels:
               description: 고유한 오브젝트 ID
             objectType:
               type: string
-              enum: [line]
+              enum:
+                - line
+                - rect
+                - circle
+                - triangle
+                - png
+                - text
+                - arrow
+                - ellipse
+              description: 객체 유형 (선, 사각형, 원, 삼각형, 이미지 등)
             style:
               type: object
               properties:
@@ -43,7 +72,192 @@ channels:
                   y:
                     type: number
 
+  stroke_sync:
+    address: 'stroke_sync'
+    messages:
+      strokeSyncMessage:
+        title: 초기 Stroke 목록 동기화
+        summary: join_room 직후 전달되는 현재 방의 stroke 목록
+        contentType: application/json
+        payload:
+          type: array
+          items:
+            $ref: '#/components/schemas/Stroke'
+
+  cursor_move:
+    address: 'cursor_move'
+    messages:
+      cursorMoveMessage:
+        title: 커서 이동 전송
+        summary: 사용자의 마우스 커서 위치를 실시간으로 전송하는 메시지
+        contentType: application/json
+        payload:
+          $ref: '#/components/schemas/CursorPosition'
+
+  cursor_update:
+    address: 'cursor_update'
+    messages:
+      cursorUpdateMessage:
+        title: 커서 위치 업데이트
+        summary: 다른 사용자의 커서 위치를 수신하는 메시지
+        contentType: application/json
+        payload:
+          $ref: '#/components/schemas/CursorDisplay'
+
+  user_left:
+    address: 'user_left'
+    messages:
+      userLeftMessage:
+        title: 사용자 퇴장 알림
+        summary: 사용자가 방을 떠날 때 해당 사용자 커서를 제거하기 위한 메시지
+        contentType: application/json
+        payload:
+          type: string
+          description: 퇴장한 사용자의 이름
+          example: "홍길동"
+
+  object_delete:
+    address: 'object_delete'
+    messages:
+      objectDeleteMessage:
+        title: Stroke 삭제 요청
+        summary: 사용자가 특정 stroke를 삭제할 때 전송하는 메시지
+        contentType: application/json
+        payload:
+          type: object
+          required:
+            - roomId
+            - strokeId
+          properties:
+            roomId:
+              type: string
+              description: 삭제가 이루어지는 방의 ID
+              example: "room123"
+            strokeId:
+              type: string
+              format: uuid
+              description: 삭제 대상 stroke의 고유 ID
+              example: "fa8710b6-ef61-4f21-9be0-a1a70b7123de"
+
+
+
+components:
+  schemas:
+    Stroke:
+      type: object
+      required:
+        - id
+        - objectType
+        - style
+        - points
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: 고유한 stroke ID
+        objectType:
+          type: string
+          enum:
+            - line
+            - rect
+            - circle
+            - triangle
+            - png
+            - text
+            - arrow
+            - ellipse
+          description: 객체 유형 (선, 사각형, 원, 삼각형, 이미지 등)
+        style:
+          type: object
+          properties:
+            color:
+              type: string
+              example: "#000000"
+            size:
+              type: number
+              example: 8
+            thinning:
+              type: number
+            smoothing:
+              type: number
+            taperStart:
+              type: number
+            taperEnd:
+              type: number
+        points:
+          type: array
+          items:
+            type: object
+            properties:
+              x:
+                type: number
+              y:
+                type: number
+              pressure:
+                type: number
+
+    CursorPosition:
+      type: object
+      required:
+        - roomId
+        - userName
+        - x
+        - y
+      properties:
+        roomId:
+          type: string
+          description: 사용자가 속한 방 ID
+          example: "room123"
+        userName:
+          type: string
+          description: 사용자 이름 또는 닉네임
+          example: "홍길동"
+        x:
+          type: number
+          description: 커서의 X 좌표 (브라우저 기준)
+          example: 312
+        y:
+          type: number
+          description: 커서의 Y 좌표 (브라우저 기준)
+          example: 428
+
+    CursorDisplay:
+      type: object
+      required:
+        - userName
+        - x
+        - y
+      properties:
+        userName:
+          type: string
+          description: 커서를 표시할 사용자 이름
+          example: "홍길동"
+        x:
+          type: number
+          description: X 좌표 (화면 기준)
+          example: 250
+        y:
+          type: number
+          description: Y 좌표 (화면 기준)
+          example: 400
+
+
+
 operations:
+  sendJoinRoom:
+    action: send
+    channel:
+      $ref: '#/channels/join_room'
+    messages:
+      - $ref: '#/channels/join_room/messages/joinRoomMessage'
+
+  receiveJoinRoom:
+    action: receive
+    channel:
+      $ref: '#/channels/stroke_sync'
+    messages:
+      - $ref: '#/channels/stroke_sync/messages/strokeSyncMessage'
+      
   sendObjectAdd:
     action: send
     channel:
@@ -57,3 +271,44 @@ operations:
       $ref: '#/channels/object_add'
     messages:
       - $ref: '#/channels/object_add/messages/objectAddMessage'
+
+
+
+  sendCursorMove:
+    action: send
+    channel:
+      $ref: '#/channels/cursor_move'
+    messages:
+      - $ref: '#/channels/cursor_move/messages/cursorMoveMessage'
+
+
+  receiveCursorUpdate:
+    action: receive
+    channel:
+      $ref: '#/channels/cursor_update'
+    messages:
+      - $ref: '#/channels/cursor_update/messages/cursorUpdateMessage'
+
+  
+  receiveUserLeft:
+    action: receive
+    channel:
+      $ref: '#/channels/user_left'
+    messages:
+      - $ref: '#/channels/user_left/messages/userLeftMessage'
+
+  sendObjectDelete:
+    action: send
+    channel:
+      $ref: '#/channels/object_delete'
+    messages:
+      - $ref: '#/channels/object_delete/messages/objectDeleteMessage'
+
+  receiveObjectDelete:
+    action: receive
+    channel:
+      $ref: '#/channels/object_delete'
+    messages:
+      - $ref: '#/channels/object_delete/messages/objectDeleteMessage'
+
+
