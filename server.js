@@ -102,7 +102,7 @@ io.on('connection', (socket) => {
       session.strokes = session.strokes.filter(s => s.id !== strokeId);
       io.to(roomId).emit('object_delete', strokeId);
     }
-  });
+  });   
 
   // 사용자 연결 종료
   socket.on('disconnect', () => {
