@@ -45,6 +45,7 @@ function createSession(roomId) {
 // 🔌 소켓 연결
 io.on('connection', (socket) => {
   console.log('🔌 사용자 연결됨');
+  
 
   // 방 생성
   socket.on('create_room', (roomId) => {
