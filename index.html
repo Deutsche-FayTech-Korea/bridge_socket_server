@@ -58,6 +58,10 @@
   <div id="cursor-layer"></div>
 
   <script src="/socket.io/socket.io.js"></script>
+  <script type="module">
+    import getStroke from "https://cdn.skypack.dev/perfect-freehand";
+    window.getStroke = getStroke;
+  </script>
   <script>
     const socket = io();
 
