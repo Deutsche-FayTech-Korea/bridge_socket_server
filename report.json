@@ -1,0 +1,52 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.Image sender": 32,
+      "vusers.created": 50,
+      "vusers.failed": 50,
+      "vusers.created_by_name.Room creator": 18
+    },
+    "rates": {},
+    "firstCounterAt": 1746669405151,
+    "lastCounterAt": 1746669414399,
+    "firstMetricAt": 1746669405151,
+    "lastMetricAt": 1746669414399,
+    "period": 1746669410000,
+    "summaries": {},
+    "histograms": {}
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.Image sender": 17,
+        "vusers.created": 25,
+        "vusers.failed": 25,
+        "vusers.created_by_name.Room creator": 8
+      },
+      "rates": {},
+      "firstCounterAt": 1746669405151,
+      "lastCounterAt": 1746669409399,
+      "firstMetricAt": 1746669405151,
+      "lastMetricAt": 1746669409399,
+      "period": "1746669400000",
+      "summaries": {},
+      "histograms": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.Image sender": 15,
+        "vusers.created": 25,
+        "vusers.failed": 25,
+        "vusers.created_by_name.Room creator": 10
+      },
+      "rates": {},
+      "firstCounterAt": 1746669410149,
+      "lastCounterAt": 1746669414399,
+      "firstMetricAt": 1746669410149,
+      "lastMetricAt": 1746669414399,
+      "period": "1746669410000",
+      "summaries": {},
+      "histograms": {}
+    }
+  ]
+}
