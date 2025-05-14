@@ -1,0 +1,29 @@
+config:
+  target: "http://localhost:3100"  # 서버 주소
+  phases:
+    - duration: 10                 # 총 10초간
+      arrivalRate: 10              # 초당 1명씩 → 최대 10명
+  engine: "socketio"
+  socketio:
+    transports: ["websocket"]
+
+scenarios:
+  - name: "minimal join test"
+    flow:
+      - emit:
+          channel: "create_room"
+          data: "testroom"
+      - emit:
+          channel: "join_room"
+          data:
+            roomId: "testroom"
+            userName: "user_{{ $randomNumber(1,1000) }}"
+      - think: 2
+      - emit:
+          channel: "cursor_move"
+          data:
+            roomId: "testroom"
+            userName: "user_{{ $randomNumber(1,1000) }}"
+            x: 123
+            y: 456
+      - think: 1
