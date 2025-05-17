@@ -33,7 +33,7 @@ alwaysApply: false
 
 ### ❌ 실패
 
-- error 상황들들 과 그 json 
+- error 상황들들 과 그 json, error 상황들은 Apperror를 찾아보세요요
 
 ex) - GET을 실패했을 경우
 
