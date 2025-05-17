@@ -8,7 +8,6 @@ class RoomService {
         this.MongoDbClient = null;
     }
 
-
     async getMongoClient() {
         try {
             if (!this.MongoDbClient) {
@@ -30,17 +29,17 @@ class RoomService {
         return this.MongoDbClient;
     }
 
-    generateRoomId(name) {
-        if (!name) {
-            throw new AppError('name은 필수입니다.', 400);
+    generateRoomId(roomName) {
+        if (!roomName) {
+            throw new AppError('roomName은 필수입니다.', 400);
         }
 
         const timestamp = new Date();
-        const roomId = generateHash(name, timestamp);
+        const roomId = generateHash(roomName, timestamp);
         
         logger.info('방 ID 생성', { 
             roomId, 
-            name,
+            roomName,
             timestamp: timestamp.toISOString()
         });
 
@@ -57,7 +56,7 @@ class RoomService {
         return `${userStr}-${timeStr}-${randomStr}`;
     }
 
-    async createRoom(mode, roomId) {
+    async createRoom(mode, roomId, roomName) {
         if (!mode) {
             throw new AppError('mode는 필수입니다.', 400);
         }
@@ -74,8 +73,22 @@ class RoomService {
         const client = await this.getMongoClient();
         const database = client.db('test');
         const collection = database.collection('room');
+
+        // 방이 이미 존재하는지 확인
+        const existingRoom = await collection.findOne({ roomId });
+        if (existingRoom) {
+            logger.warn('방 생성 실패 - 이미 존재하는 방', { 
+                roomId, 
+                mode,
+                action: 'create',
+                timestamp: timestamp.toISOString()
+            });
+            throw new AppError('이미 존재하는 방입니다.', 409);
+        }
+
         await collection.insertOne({
             roomId,
+            roomName,
             mode,
             createdAt: timestamp
         });
@@ -94,39 +107,45 @@ class RoomService {
         };
     }
 
-    async joinRoom(roomId, mode) {
-        if (!roomId || !mode) {
-            throw new AppError('roomId와 mode는 필수입니다.', 400);
+    async joinRoom(roomId, mode, userId) {
+        if (!roomId || !mode || !userId) {
+            throw new AppError('roomId, mode, userId는 필수입니다.', 400);
         }
 
         const client = await this.getMongoClient();
-        const database = client.db('test');
-        const collection = database.collection('room');
+        const database = client.db('whiteboard_db');
+        const collection = database.collection('whiteboard_rooms');
         
         const room = await collection.findOne({ roomId });
         if (!room) {
             throw new AppError('존재하지 않는 방입니다.', 404);
         }
 
-        logger.info('방 참가 시도', { 
-            roomId, 
-            mode,
-            action: 'join',
-            timestamp: new Date().toISOString()
-        });
+        // 방 참가자 정보 업데이트
+        await collection.updateOne(
+            { roomId },
+            { 
+                $push: { 
+                    participants: {
+                        userId,
+                        joinedAt: new Date()
+                    }
+                }
+            }
+        );
 
         logger.info('방 참가 완료', { 
             roomId, 
             mode,
+            userId,
             action: 'join',
             timestamp: new Date().toISOString()
         });
 
-        const socket = await this.connectToRoomSocket();
-
         return {
             roomId,
             mode,
+            userId,
             timestamp: new Date()
         };
     }
