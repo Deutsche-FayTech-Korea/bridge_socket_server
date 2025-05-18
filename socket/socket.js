@@ -29,7 +29,9 @@ function socketConnect(server) {
 
         // 토큰 검증
         const token = socket.handshake.auth.token;
-        console.log('token', token);
+        logger.info('토큰', {
+            token: token
+        });
         if (!token) {
             logger.error('토큰이 없음', {
                 socketId: socket.id,

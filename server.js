@@ -7,11 +7,12 @@ const roomRoutes = require('./output/routes/room/room.routes');
 const jwt = require('jsonwebtoken');
 const { errorHandler, logUtils } = require('./common/error/errorHandler');
 const verifyToken = require('./common/error/jwt');
+const cookieParser = require('cookie-parser');
 
 // CORS 설정
 app.use((req, res, next) => {
-    // 모든 도메인에서의 요청 허용
-    res.header('Access-Control-Allow-Origin', '*');
+    // 특정 도메인에서의 요청만 허용
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Credentials', 'true');
@@ -26,6 +27,7 @@ app.use((req, res, next) => {
 // 미들웨어 설정
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // 로깅 미들웨어
 app.use(logUtils.logRequest);

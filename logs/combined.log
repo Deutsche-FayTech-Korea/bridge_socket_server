@@ -4337,3 +4337,417 @@
 {"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"47b069baa58f","socketId":"6p87qTDMU5dRDJ7kAAAI","timestamp":"2025-05-17T12:36:44.276Z","userId":"kto5vxvgx8o"}
 {"level":"info","message":"연결 해제","socketId":"6p87qTDMU5dRDJ7kAAAI","timestamp":"2025-05-17T12:36:45.268Z","userId":"kto5vxvgx8o"}
 {"level":"info","message":"연결 해제","socketId":"FqhRL99r52kivOaEAAAC","timestamp":"2025-05-17T12:36:46.326Z","userId":"5vu2h69f5aq"}
+{"body":{"roomName":"khu note122"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:06:18.902Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":"khu note122"},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:06:18.911Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:06:18.914Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"khu note122"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:08:19.475Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":"khu note122"},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:08:19.478Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:08:19.479Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"khu note122"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:08:47.650Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":"khu note122"},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:08:47.653Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:08:47.656Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"khu note122"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:10:07.944Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"khu note122","timestamp":"2025-05-18T09:10:07.946Z"}
+{"hash":"b31f481c73b6","level":"info","message":"해시 생성 완료","name":"khu note122","timestamp":"2025-05-18T09:10:07.946Z"}
+{"level":"info","message":"방 ID 생성","roomId":"b31f481c73b6","roomName":"khu note122","timestamp":"2025-05-18T09:10:07.946Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:10:07.947Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"khu note122"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:10:13.103Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"khu note122","timestamp":"2025-05-18T09:10:13.104Z"}
+{"hash":"59bbbac3a0d1","level":"info","message":"해시 생성 완료","name":"khu note122","timestamp":"2025-05-18T09:10:13.104Z"}
+{"level":"info","message":"방 ID 생성","roomId":"59bbbac3a0d1","roomName":"khu note122","timestamp":"2025-05-18T09:10:13.104Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:10:13.104Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"53d88d91c1dd","roomName":"rgfhhhf"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:11:22.531Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"53d88d91c1dd","timestamp":"2025-05-18T09:11:22.533Z"}
+{"level":"info","message":"MongoDB 연결 성공","timestamp":"2025-05-18 18:11:23"}
+{"action":"create","level":"warn","message":"방 생성 실패 - 이미 존재하는 방","mode":"public","roomId":"53d88d91c1dd","timestamp":"2025-05-18T09:11:22.533Z"}
+{"error":{"code":409,"message":"이미 존재하는 방입니다.","stack":"Error: 이미 존재하는 방입니다.\n    at RoomService.createRoom (D:\\workspaces\\nodejs\\socketio\\service\\roomService.js:86:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createRoom (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:27:28)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"mode":"public","roomId":"53d88d91c1dd","roomName":"rgfhhhf"},"ip":"::1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-05-18T09:11:23.244Z","user":{}}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":409,"timestamp":"2025-05-18T09:11:23.246Z","url":"/api/room/create"}
+{"body":{"roomName":"test1"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:11:54.018Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"test1","timestamp":"2025-05-18T09:11:54.020Z"}
+{"hash":"f8966d5fa475","level":"info","message":"해시 생성 완료","name":"test1","timestamp":"2025-05-18T09:11:54.020Z"}
+{"level":"info","message":"방 ID 생성","roomId":"f8966d5fa475","roomName":"test1","timestamp":"2025-05-18T09:11:54.020Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:11:54.022Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"f8966d5fa475","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:12:14.317Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"f8966d5fa475","timestamp":"2025-05-18T09:12:14.319Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"f8966d5fa475","timestamp":"2025-05-18T09:12:14.319Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:12:14.418Z","url":"/api/room/create"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"f8966d5fa475"},"timestamp":"2025-05-18T09:13:46.305Z","url":"/api/room/join/?mode=public&roomId=f8966d5fa475"}
+{"error":{"code":400,"message":"roomId, mode, userId는 필수입니다.","stack":"Error: roomId, mode, userId는 필수입니다.\n    at joinRoom (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:45:23)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:50:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"::1","method":"GET","params":{},"path":"/api/room/join/","query":{"mode":"public","roomId":"f8966d5fa475"},"url":"/api/room/join/?mode=public&roomId=f8966d5fa475"},"timestamp":"2025-05-18T09:13:46.307Z","user":{}}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:13:46.308Z","url":"/api/room/join/?mode=public&roomId=f8966d5fa475"}
+{"body":{"roomName":"test2"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:15:57.461Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"test2","timestamp":"2025-05-18T09:15:57.465Z"}
+{"hash":"48a3a9266d66","level":"info","message":"해시 생성 완료","name":"test2","timestamp":"2025-05-18T09:15:57.465Z"}
+{"level":"info","message":"방 ID 생성","roomId":"48a3a9266d66","roomName":"test2","timestamp":"2025-05-18T09:15:57.465Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:15:57.467Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"48a3a9266d66","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:16:08.350Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"48a3a9266d66","timestamp":"2025-05-18T09:16:08.352Z"}
+{"level":"info","message":"MongoDB 연결 성공","timestamp":"2025-05-18 18:16:08"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"48a3a9266d66","timestamp":"2025-05-18T09:16:08.352Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:16:09.049Z","url":"/api/room/create"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"48a3a9266d66"},"timestamp":"2025-05-18T09:16:13.563Z","url":"/api/room/join/?mode=public&roomId=48a3a9266d66"}
+{"error":{"code":400,"message":"roomId, mode, userId는 필수입니다.","stack":"Error: roomId, mode, userId는 필수입니다.\n    at RoomService.joinRoom (D:\\workspaces\\nodejs\\socketio\\service\\roomService.js:115:19)\n    at joinRoom (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:47:46)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:50:9)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"::1","method":"GET","params":{},"path":"/api/room/join/","query":{"mode":"public","roomId":"48a3a9266d66"},"url":"/api/room/join/?mode=public&roomId=48a3a9266d66"},"timestamp":"2025-05-18T09:16:13.566Z","user":{}}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:16:13.567Z","url":"/api/room/join/?mode=public&roomId=48a3a9266d66"}
+{"body":{"roomName":"test2"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:17:28.577Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"test2","timestamp":"2025-05-18T09:17:28.581Z"}
+{"hash":"c0ac91bbd203","level":"info","message":"해시 생성 완료","name":"test2","timestamp":"2025-05-18T09:17:28.581Z"}
+{"level":"info","message":"방 ID 생성","roomId":"c0ac91bbd203","roomName":"test2","timestamp":"2025-05-18T09:17:28.581Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:17:28.582Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"c0ac91bbd203","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:17:36.223Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"c0ac91bbd203","timestamp":"2025-05-18T09:17:36.225Z"}
+{"level":"info","message":"MongoDB 연결 성공","timestamp":"2025-05-18 18:17:36"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"c0ac91bbd203","timestamp":"2025-05-18T09:17:36.225Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:17:36.966Z","url":"/api/room/create"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"c0ac91bbd203"},"timestamp":"2025-05-18T09:17:41.902Z","url":"/api/room/join/?mode=public&roomId=c0ac91bbd203"}
+{"error":{"code":404,"message":"존재하지 않는 방입니다.","stack":"Error: 존재하지 않는 방입니다.\n    at RoomService.joinRoom (D:\\workspaces\\nodejs\\socketio\\service\\roomService.js:124:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async joinRoom (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:47:28)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"::1","method":"GET","params":{},"path":"/api/room/join/","query":{"mode":"public","roomId":"c0ac91bbd203"},"url":"/api/room/join/?mode=public&roomId=c0ac91bbd203"},"timestamp":"2025-05-18T09:17:41.948Z","user":{}}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":404,"timestamp":"2025-05-18T09:17:41.951Z","url":"/api/room/join/?mode=public&roomId=c0ac91bbd203"}
+{"body":{"mode":"public","roomId":"c0ac91bbd203","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:19:19.052Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"c0ac91bbd203","timestamp":"2025-05-18T09:19:19.056Z"}
+{"level":"info","message":"MongoDB 연결 성공","timestamp":"2025-05-18 18:19:19"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"c0ac91bbd203","timestamp":"2025-05-18T09:19:19.056Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:19:19.713Z","url":"/api/room/create"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"c0ac91bbd203"},"timestamp":"2025-05-18T09:19:24.341Z","url":"/api/room/join/?mode=public&roomId=c0ac91bbd203"}
+{"action":"join","level":"info","message":"방 참가 완료","mode":"public","roomId":"c0ac91bbd203","timestamp":"2025-05-18T09:19:24.438Z"}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:19:24.440Z","url":"/api/room/join/?mode=public&roomId=c0ac91bbd203"}
+{"level":"info","message":"새로운 연결 시도","socketId":"AClFw-V_GW0oNq-0AAAB","timestamp":"2025-05-18T09:19:51.122Z"}
+{"level":"error","message":"토큰이 없음","socketId":"AClFw-V_GW0oNq-0AAAB","timestamp":"2025-05-18T09:19:51.124Z"}
+{"body":{"mode":"public","roomId":"c0ac91bbd203","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:21:25.717Z","url":"/api/room/create"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"mode":"public","roomId":"c0ac91bbd203","roomName":"rkh"},"ip":"::1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-05-18T09:21:25.721Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":401,"timestamp":"2025-05-18T09:21:25.722Z","url":"/api/room/create"}
+{"body":{"roomName":"test2"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:21:54.534Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"test2","timestamp":"2025-05-18T09:21:54.537Z"}
+{"hash":"6f6d830f7976","level":"info","message":"해시 생성 완료","name":"test2","timestamp":"2025-05-18T09:21:54.537Z"}
+{"level":"info","message":"방 ID 생성","roomId":"6f6d830f7976","roomName":"test2","timestamp":"2025-05-18T09:21:54.537Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:21:54.540Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"6f6d830f7976","roomName":"rkh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:22:03.145Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"6f6d830f7976","timestamp":"2025-05-18T09:22:03.147Z"}
+{"level":"info","message":"MongoDB 연결 성공","timestamp":"2025-05-18 18:22:03"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"6f6d830f7976","timestamp":"2025-05-18T09:22:03.147Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:22:03.880Z","url":"/api/room/create"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"6f6d830f7976"},"timestamp":"2025-05-18T09:22:06.706Z","url":"/api/room/join/?mode=public&roomId=6f6d830f7976"}
+{"action":"join","level":"info","message":"방 참가 완료","mode":"public","roomId":"6f6d830f7976","timestamp":"2025-05-18T09:22:06.801Z"}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:22:06.802Z","url":"/api/room/join/?mode=public&roomId=6f6d830f7976"}
+{"level":"info","message":"새로운 연결 시도","socketId":"N2EinhUBsuOgCrMmAAAB","timestamp":"2025-05-18T09:22:23.397Z"}
+{"level":"error","message":"토큰이 없음","socketId":"N2EinhUBsuOgCrMmAAAB","timestamp":"2025-05-18T09:22:23.400Z"}
+{"body":{"userId":"51kscza1xlb"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:34:58.070Z","url":"/api/auth/token"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:34:58.074Z","url":"/api/auth/token"}
+{"body":{"userId":"lk4ybj7e6y7"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:34:58.075Z","url":"/api/auth/token"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:34:58.076Z","url":"/api/auth/token"}
+{"body":{"userId":"5jvdcce0vt2"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:37:18.482Z","url":"/api/auth/token"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:37:18.484Z","url":"/api/auth/token"}
+{"body":{"userId":"r3icv842k"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:37:18.487Z","url":"/api/auth/token"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:37:18.489Z","url":"/api/auth/token"}
+{"body":{"roomName":"ghgh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:37:27.106Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":"ghgh"},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:37:27.107Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:37:27.107Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"dfdf"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:40:39.758Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":"dfdf"},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:40:39.759Z","user":"anonymous"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:40:39.760Z","url":"/api/room/generate-id"}
+{"body":{"roomName":""},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:41:12.859Z","url":"/api/room/generate-id"}
+{"error":{"code":400,"message":"roomName은 필수입니다.","stack":"Error: roomName은 필수입니다.\n    at RoomService.generateRoomId (D:\\workspaces\\nodejs\\socketio\\service\\roomService.js:35:19)\n    at generateRoomId (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:10:40)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:50:9)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"roomName":""},"ip":"::1","method":"POST","params":{},"path":"/api/room/generate-id","query":{},"url":"/api/room/generate-id"},"timestamp":"2025-05-18T09:41:12.860Z","user":{}}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":400,"timestamp":"2025-05-18T09:41:12.861Z","url":"/api/room/generate-id"}
+{"body":{"roomName":"fffd"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:41:14.580Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"fffd","timestamp":"2025-05-18T09:41:14.582Z"}
+{"hash":"0b62249e44c7","level":"info","message":"해시 생성 완료","name":"fffd","timestamp":"2025-05-18T09:41:14.582Z"}
+{"level":"info","message":"방 ID 생성","roomId":"0b62249e44c7","roomName":"fffd","timestamp":"2025-05-18T09:41:14.582Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:41:14.585Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"0b62249e44c7","roomName":"fffd"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:41:14.591Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"0b62249e44c7","timestamp":"2025-05-18T09:41:14.592Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"0b62249e44c7","timestamp":"2025-05-18T09:41:14.592Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:41:14.687Z","url":"/api/room/create"}
+{"body":{"roomName":"ttrt"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:42:36.287Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"ttrt","timestamp":"2025-05-18T09:42:36.288Z"}
+{"hash":"dea4472009a8","level":"info","message":"해시 생성 완료","name":"ttrt","timestamp":"2025-05-18T09:42:36.288Z"}
+{"level":"info","message":"방 ID 생성","roomId":"dea4472009a8","roomName":"ttrt","timestamp":"2025-05-18T09:42:36.288Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:42:36.288Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"dea4472009a8","roomName":"ttrt"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:42:36.292Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"dea4472009a8","timestamp":"2025-05-18T09:42:36.292Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"dea4472009a8","timestamp":"2025-05-18T09:42:36.292Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:42:36.379Z","url":"/api/room/create"}
+{"body":{"roomName":"hth"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:44:49.323Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"hth","timestamp":"2025-05-18T09:44:49.323Z"}
+{"hash":"5649d7e069f9","level":"info","message":"해시 생성 완료","name":"hth","timestamp":"2025-05-18T09:44:49.323Z"}
+{"level":"info","message":"방 ID 생성","roomId":"5649d7e069f9","roomName":"hth","timestamp":"2025-05-18T09:44:49.323Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:44:49.330Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"5649d7e069f9","roomName":"hth"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:44:49.339Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"5649d7e069f9","timestamp":"2025-05-18T09:44:49.339Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"5649d7e069f9","timestamp":"2025-05-18T09:44:49.339Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:44:49.432Z","url":"/api/room/create"}
+{"body":{"roomName":"yhyh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:49:01.714Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"yhyh","timestamp":"2025-05-18T09:49:01.715Z"}
+{"hash":"206df7be1fdf","level":"info","message":"해시 생성 완료","name":"yhyh","timestamp":"2025-05-18T09:49:01.715Z"}
+{"level":"info","message":"방 ID 생성","roomId":"206df7be1fdf","roomName":"yhyh","timestamp":"2025-05-18T09:49:01.715Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:49:01.717Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"206df7be1fdf","roomName":"yhyh"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:49:01.723Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"206df7be1fdf","timestamp":"2025-05-18T09:49:01.724Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"206df7be1fdf","timestamp":"2025-05-18T09:49:01.724Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:49:01.821Z","url":"/api/room/create"}
+{"level":"info","message":"새로운 연결 시도","socketId":"YKCdelO-EWNt0IoQAAAG","timestamp":"2025-05-18T09:49:55.720Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"YKCdelO-EWNt0IoQAAAG","timestamp":"2025-05-18T09:49:55.721Z"}
+{"level":"info","message":"방 참가","roomId":"206df7be1fdf","roomParticipants":[{"isNewJoiner":true,"socketId":"YKCdelO-EWNt0IoQAAAG"}],"socketId":"YKCdelO-EWNt0IoQAAAG","timestamp":"2025-05-18T09:49:55.725Z"}
+{"level":"info","message":"연결 해제","socketId":"YKCdelO-EWNt0IoQAAAG","timestamp":"2025-05-18T09:49:59.153Z"}
+{"level":"info","message":"새로운 연결 시도","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:49:59.785Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:49:59.786Z"}
+{"level":"info","message":"방 참가","roomId":"206df7be1fdf","roomParticipants":[{"isNewJoiner":true,"socketId":"ifsJRtxvz-veqBlIAAAJ"}],"socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:49:59.787Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:01.860Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:01.861Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.044Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.059Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.068Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.081Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.091Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.103Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.111Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.124Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.128Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.135Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.144Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.150Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.156Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.165Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.278Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.285Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.295Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.301Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.307Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.314Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.320Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.335Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.343Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.357Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.357Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.366Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.378Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.383Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.389Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.400Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:02.407Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:03.446Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:03.453Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:03.465Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"206df7be1fdf","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:50:03.473Z"}
+{"level":"info","message":"연결 해제","socketId":"ifsJRtxvz-veqBlIAAAJ","timestamp":"2025-05-18T09:52:08.310Z"}
+{"body":{"roomName":"fgfg"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:52:12.968Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"fgfg","timestamp":"2025-05-18T09:52:12.969Z"}
+{"hash":"094f58abaa3b","level":"info","message":"해시 생성 완료","name":"fgfg","timestamp":"2025-05-18T09:52:12.969Z"}
+{"level":"info","message":"방 ID 생성","roomId":"094f58abaa3b","roomName":"fgfg","timestamp":"2025-05-18T09:52:12.969Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:52:12.970Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"094f58abaa3b","roomName":"fgfg"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:52:12.973Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"094f58abaa3b","timestamp":"2025-05-18T09:52:12.974Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"094f58abaa3b","timestamp":"2025-05-18T09:52:12.974Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:52:13.065Z","url":"/api/room/create"}
+{"level":"info","message":"새로운 연결 시도","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:13.204Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:13.205Z"}
+{"level":"info","message":"방 참가","roomId":"094f58abaa3b","roomParticipants":[{"isNewJoiner":true,"socketId":"sI9xVEfCupTSG-waAAAL"}],"socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:13.205Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.880Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.893Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.902Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.915Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.916Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.924Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.991Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:19.999Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.088Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.096Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.105Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.110Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.118Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.128Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:52:20.134Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:53:59.562Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:53:59.563Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.034Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.035Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.043Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.061Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.069Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.077Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.082Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.089Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.098Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.104Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"094f58abaa3b","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:00.110Z"}
+{"level":"info","message":"연결 해제","socketId":"sI9xVEfCupTSG-waAAAL","timestamp":"2025-05-18T09:54:11.262Z"}
+{"body":{"roomName":"sdf"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:54:34.628Z","url":"/api/room/generate-id"}
+{"level":"info","message":"해시 생성 시작","name":"sdf","timestamp":"2025-05-18T09:54:34.628Z"}
+{"hash":"4f15c61e2b59","level":"info","message":"해시 생성 완료","name":"sdf","timestamp":"2025-05-18T09:54:34.628Z"}
+{"level":"info","message":"방 ID 생성","roomId":"4f15c61e2b59","roomName":"sdf","timestamp":"2025-05-18T09:54:34.628Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:54:34.629Z","url":"/api/room/generate-id"}
+{"body":{"mode":"public","roomId":"4f15c61e2b59","roomName":"sdf"},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:54:34.636Z","url":"/api/room/create"}
+{"action":"create","level":"info","message":"방 생성 시도","mode":"public","roomId":"4f15c61e2b59","timestamp":"2025-05-18T09:54:34.636Z"}
+{"action":"create","level":"info","message":"방 생성 완료","mode":"public","roomId":"4f15c61e2b59","timestamp":"2025-05-18T09:54:34.636Z"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:54:34.725Z","url":"/api/room/create"}
+{"level":"info","message":"새로운 연결 시도","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.789Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.790Z"}
+{"level":"info","message":"방 참가","roomId":"4f15c61e2b59","roomParticipants":[{"isNewJoiner":true,"socketId":"ekPzfsX3Ru8gZUKRAAAO"}],"socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.790Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.800Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.817Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.834Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.851Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.869Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.884Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:54:34.901Z"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:54:41.407Z","url":"/api/room/join/4f15c61e2b59"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":404,"timestamp":"2025-05-18T09:54:41.408Z","url":"/api/room/join/4f15c61e2b59"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"POST","params":{},"query":{},"timestamp":"2025-05-18T09:54:54.940Z","url":"/api/room/join/4f15c61e2b59"}
+{"level":"info","message":"API 응답","method":"POST","responseTime":null,"statusCode":404,"timestamp":"2025-05-18T09:54:54.941Z","url":"/api/room/join/4f15c61e2b59"}
+{"body":{},"ip":"::1","level":"info","message":"API 요청","method":"GET","params":{},"query":{"mode":"public","roomId":"4f15c61e2b59"},"timestamp":"2025-05-18T09:57:04.390Z","url":"/api/room/join/?mode=public&roomId=4f15c61e2b59"}
+{"action":"join","level":"info","message":"방 참가 완료","mode":"public","roomId":"4f15c61e2b59","timestamp":"2025-05-18T09:57:04.493Z"}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":200,"timestamp":"2025-05-18T09:57:04.494Z","url":"/api/room/join/?mode=public&roomId=4f15c61e2b59"}
+{"level":"info","message":"새로운 연결 시도","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.596Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.596Z"}
+{"level":"info","message":"방 참가","roomId":"4f15c61e2b59","roomParticipants":[{"isNewJoiner":false,"socketId":"ekPzfsX3Ru8gZUKRAAAO"},{"isNewJoiner":true,"socketId":"Puv3tYQPoB86IpegAAAR"}],"socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.597Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.612Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.619Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:04.632Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.142Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.150Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.159Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.166Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.180Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.187Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.203Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.214Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.227Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.238Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.293Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.308Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.317Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.329Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.336Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.351Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.352Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.362Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.403Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.420Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.437Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.444Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.459Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.465Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.479Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.480Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.491Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.500Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.502Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.513Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.523Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.525Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.534Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.542Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.548Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.556Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.565Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.572Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.587Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.595Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.606Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.607Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.615Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.626Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.632Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.642Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.650Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.659Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:11.662Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.580Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.589Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.595Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.604Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.611Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.617Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.633Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.642Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.656Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.662Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.676Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.677Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.697Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.702Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.710Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.718Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.726Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.752Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.767Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.783Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.792Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.815Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.817Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.872Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.880Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.891Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.896Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.911Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.917Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.934Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.944Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.955Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.956Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.965Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.975Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.977Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.986Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:13.996Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.003Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.010Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.016Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.026Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.032Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.041Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.044Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.061Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.064Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.066Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.082Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.091Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.102Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.106Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.116Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.123Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.130Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.138Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.145Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:57:14.152Z"}
+{"level":"info","message":"연결 해제","socketId":"Puv3tYQPoB86IpegAAAR","timestamp":"2025-05-18T09:58:49.685Z"}
+{"level":"info","message":"새로운 연결 시도","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:50.377Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:50.383Z"}
+{"level":"info","message":"방 참가","roomId":"4f15c61e2b59","roomParticipants":[{"isNewJoiner":false,"socketId":"ekPzfsX3Ru8gZUKRAAAO"},{"isNewJoiner":true,"socketId":"kN03ou2A_omlLTKvAAAU"}],"socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:50.384Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.091Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.093Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.303Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.309Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.325Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.332Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.342Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.348Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.355Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:58:52.362Z"}
+{"level":"info","message":"연결 해제","socketId":"ekPzfsX3Ru8gZUKRAAAO","timestamp":"2025-05-18T09:58:53.333Z"}
+{"level":"info","message":"새로운 연결 시도","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:53.498Z"}
+{"level":"info","message":"토큰 검증 성공","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:53.499Z"}
+{"level":"info","message":"방 참가","roomId":"4f15c61e2b59","roomParticipants":[{"isNewJoiner":false,"socketId":"kN03ou2A_omlLTKvAAAU"},{"isNewJoiner":true,"socketId":"yH9-YEUcwe7lScBSAAAX"}],"socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:53.500Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.152Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.169Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.184Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.218Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.235Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.251Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.268Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.284Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.327Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.329Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.335Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.351Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.368Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.385Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.401Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.418Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.451Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.484Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.501Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.518Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.535Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.543Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.545Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.551Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"yH9-YEUcwe7lScBSAAAX","timestamp":"2025-05-18T09:58:54.567Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:59:02.476Z"}
+{"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"4f15c61e2b59","socketId":"kN03ou2A_omlLTKvAAAU","timestamp":"2025-05-18T09:59:02.483Z"}

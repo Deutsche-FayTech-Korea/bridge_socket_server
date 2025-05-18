@@ -29,7 +29,7 @@ const verifyJwtToken = (token) => {
 
 // HTTP 요청용 JWT 검증 미들웨어
 const verifyToken = (req, res, next) => {
-    const token = req.headers.authorization?.split(" ")[1];
+    const token = req.cookies.access_token;
     
     if (!token) {
         return next(new AppError('토큰 없음', 400));
