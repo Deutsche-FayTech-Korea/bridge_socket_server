@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const { socketConnect } = require('./socket/socket');
-const roomRoutes = require('./output/routes/room/room.routes');
+const roomRoutes = require('./routes/room/room.routes');
 const jwt = require('jsonwebtoken');
 const { errorHandler, logUtils } = require('./common/error/errorHandler');
 const verifyToken = require('./common/error/jwt');
@@ -33,24 +33,7 @@ app.use(cookieParser());
 app.use(logUtils.logRequest);
 app.use(logUtils.logResponse);
 
-// 임시 JWT 토큰 생성 엔드포인트
-app.post('/api/auth/token', (req, res) => {
-    const { userId } = req.body;
-    
-    if (!userId) {
-        return res.status(400).json({
-            success: false,
-            message: 'userId는 필수입니다.'
-        });
-    }
-    console.log(userId,"는 다음과 같습니다");
-    const token = jwt.sign(
-        { userId, role: 'user' },
-        process.env.JWT_SECRET || 'your-secret-key',
-        { expiresIn: '1h' }
-    );
-    res.json({ token });
-});
+
 
 // API 라우트 설정
 app.use('/api/room', verifyToken, roomRoutes);
