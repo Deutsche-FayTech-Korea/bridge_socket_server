@@ -28,12 +28,27 @@ function socketConnect(server) {
         });
 
         // 토큰 검증
-        const token = socket.handshake.auth.token;
-        logger.info('토큰', {
-            token: token
+        const cookie = socket.handshake.headers.cookie;
+        logger.info('쿠키', {
+            cookie: cookie
         });
-        if (!token) {
-            logger.error('토큰이 없음', {
+
+        if (!cookie) {
+            logger.error('쿠키가 없음', {
+                socketId: socket.id,
+                timestamp: new Date().toISOString()
+            });
+            socket.disconnect(true);
+            return;
+        }
+
+        // access_token 추출
+        const accessToken = cookie.split(';')
+            .find(c => c.trim().startsWith('access_token='))
+            ?.split('=')[1];
+
+        if (!accessToken) {
+            logger.error('access_token이 없음', {
                 socketId: socket.id,
                 timestamp: new Date().toISOString()
             });
@@ -42,7 +57,7 @@ function socketConnect(server) {
         }
 
         try {
-            const userId = verifyJwtToken(token);
+            const userId = verifyJwtToken(accessToken);
             socket.userId = userId;
             logger.info('토큰 검증 성공', {
                 socketId: socket.id,

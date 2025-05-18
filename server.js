@@ -33,8 +33,6 @@ app.use(cookieParser());
 app.use(logUtils.logRequest);
 app.use(logUtils.logResponse);
 
-
-
 // API 라우트 설정
 app.use('/api/room', verifyToken, roomRoutes);
 
@@ -60,7 +58,16 @@ app.use((req, res, next) => {
 app.use(errorHandler);
 
 // 소켓 서버 초기화
-socketConnect(http);
+const io = socketConnect(http, {
+    path: '/socket.io',
+    cors: {
+        origin: 'http://localhost:3000',
+        methods: ['GET', 'POST'],
+        credentials: true
+    },
+    transports: ['websocket'],
+    allowEIO3: true
+});
 
 // 서버 시작
 const PORT = process.env.PORT || 8000;
