@@ -5071,3 +5071,7 @@
 {"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"7eb2e8b12bc0","socketId":"O6ViECWTE7iLtUVKAAAF","timestamp":"2025-05-18T10:58:20.857Z"}
 {"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"7eb2e8b12bc0","socketId":"O6ViECWTE7iLtUVKAAAF","timestamp":"2025-05-18T10:58:20.866Z"}
 {"level":"info","message":"커서 위치 받았을 때 이벤트","roomId":"7eb2e8b12bc0","socketId":"O6ViECWTE7iLtUVKAAAF","timestamp":"2025-05-18T10:58:20.876Z"}
+{"level":"info","message":"새로운 연결 시도","socketId":"_ksZow9FihwK452dAAAB","timestamp":"2025-05-18T17:14:51.232Z"}
+{"cookie":"access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsIm5hbWUiOiJ0ZXN0MiIsImVtYWlsIjoidGVzdDJAZXhhbXBsZS5jb20iLCJoYXNoIjoiIiwiZXhwIjoxNzQ3NTg5MzY0fQ.uSEWs3YwP-uHbASiMNdr3Z6hM3wjq8hEojrMdVP30Qk; refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsIm5hbWUiOiIiLCJlbWFpbCI6InRlc3QyQGV4YW1wbGUuY29tIiwiaGFzaCI6IiIsImV4cCI6MTc0ODE5MzI2NH0.LXtbmWOf81gprGnZEUExkoJAdyQ-Gea4rMT296C76fg","level":"info","message":"쿠키","timestamp":"2025-05-19 02:14:51"}
+{"level":"info","message":"토큰 검증 성공","socketId":"_ksZow9FihwK452dAAAB","timestamp":"2025-05-18T17:14:51.238Z"}
+{"level":"info","message":"방 참가","roomId":"1c6687880ced","roomParticipants":[{"isNewJoiner":true,"socketId":"_ksZow9FihwK452dAAAB"}],"socketId":"_ksZow9FihwK452dAAAB","timestamp":"2025-05-18T17:14:51.240Z"}
