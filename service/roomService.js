@@ -1,6 +1,7 @@
 const { generateHash } = require('../common/utils/hashGenerator');
 const { AppError, logger } = require('../common/error/errorHandler');
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const jwt = require('jsonwebtoken');
 
 class RoomService {
     constructor() {
@@ -71,8 +72,8 @@ class RoomService {
         });
 
         const client = await this.getMongoClient();
-        const database = client.db('test');
-        const collection = database.collection('room');
+        const database = client.db('whiteboard_db');
+        const collection = database.collection('whiteboard_rooms');
 
         // 방이 이미 존재하는지 확인
         const existingRoom = await collection.findOne({ roomId });
@@ -90,7 +91,8 @@ class RoomService {
             roomId,
             roomName,
             mode,
-            createdAt: timestamp
+            createdAt: timestamp,
+            participants: []
         });
 
         logger.info('방 생성 완료', { 
@@ -107,9 +109,11 @@ class RoomService {
         };
     }
 
-    async joinRoom(roomId, mode, userId) {
-        if (!roomId || !mode || !userId) {
-            throw new AppError('roomId, mode, userId는 필수입니다.', 400);
+    async joinRoom(roomId, mode, req) {
+        const userId = req.cookies.access_token ? jwt.decode(req.cookies.access_token).userId : null;
+        
+        if (!roomId || !mode ) {
+            throw new AppError('roomId, mode는 필수입니다.', 400);
         }
 
         const client = await this.getMongoClient();

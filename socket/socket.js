@@ -1,6 +1,7 @@
 const { Server } = require('socket.io');
 const { logger } = require('../common/error/errorHandler');
 const jwt = require('jsonwebtoken');
+const { verifyJwtToken } = require('../common/error/jwt');
 
 let io; // io 인스턴스를 전역 변수로 선언
 
@@ -26,7 +27,37 @@ function socketConnect(server) {
             timestamp: new Date().toISOString()
         });
 
-        // 토큰 검증 -> auth 서버랑 연동 아직 안되서 안함
+        // 토큰 검증
+        const token = socket.handshake.auth.token;
+        logger.info('토큰', {
+            token: token
+        });
+        if (!token) {
+            logger.error('토큰이 없음', {
+                socketId: socket.id,
+                timestamp: new Date().toISOString()
+            });
+            socket.disconnect(true);
+            return;
+        }
+
+        try {
+            const userId = verifyJwtToken(token);
+            socket.userId = userId;
+            logger.info('토큰 검증 성공', {
+                socketId: socket.id,
+                userId: userId,
+                timestamp: new Date().toISOString()
+            });
+        } catch (error) {
+            logger.error('토큰 검증 실패', {
+                socketId: socket.id,
+                error: error.message,
+                timestamp: new Date().toISOString()
+            });
+            socket.disconnect(true);
+            return;
+        }
 
         // 방 참가 이벤트
         socket.on('joinRoom', ({roomId}) => {
@@ -98,6 +129,40 @@ function socketConnect(server) {
             }
         });
 
+        //커서 위치 받았을 때 이벤트
+        socket.on('sendCursorPosition', ({roomId, data}) => {
+            try {
+                if (!roomId || !data) {
+                    logger.error('잘못된 커서 위치 데이터', {
+                        roomId,
+                        socketId: socket.id,
+                        timestamp: new Date().toISOString()
+                    });
+                    return;
+                }
+                
+                io.to(roomId).emit('sendCursorPosition', {
+                    data,
+                    socketId: socket.id,
+                    userId: socket.userId,
+                    timestamp: new Date().toISOString()
+                });
+
+                logger.info('커서 위치 받았을 때 이벤트', {
+                    roomId,
+                    socketId: socket.id,
+                    userId: socket.userId,
+                    timestamp: new Date().toISOString()
+                });
+                
+            } catch (error) {
+                logger.error('커서 위치 보내기 이벤트 처리 실패', {
+                    roomId,
+                    socketId: socket.id,
+                    error: error.message
+                });
+            }
+        });
 
         // 방 나가기 이벤트
         socket.on('leaveRoom', (roomId) => {

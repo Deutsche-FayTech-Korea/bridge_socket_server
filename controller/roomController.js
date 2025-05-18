@@ -40,13 +40,11 @@ const roomController = {
     joinRoom: async (req, res, next) => {
         try {            
             const { roomId, mode} = req.query;
-            const userId = req.user.userId;
-            if (!roomId || !mode || !userId) {
-                throw new AppError('roomId, mode, userId는 필수입니다.', 400);
+            if (!roomId || !mode) {
+                throw new AppError('roomId, mode는 필수입니다.', 400);
             }
-            
 
-            const result = await roomService.joinRoom(roomId, mode, userId);
+            const result = await roomService.joinRoom(roomId, mode, req);
             res.json({
                 success: true,
                 message: "방 참가 성공",
