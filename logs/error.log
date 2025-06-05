@@ -462,3 +462,4 @@
 {"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"P0BNGXHaRF8CV_8xAAA5","timestamp":"2025-06-05T11:14:49.236Z"}
 {"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"EorM1YOe1s4oCZftAAA7","timestamp":"2025-06-05T11:14:57.009Z"}
 {"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 20:32:04"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 20:41:37"}
