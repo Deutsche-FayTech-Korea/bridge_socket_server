@@ -1,10 +1,10 @@
 const crypto = require('crypto');
-const { logger } = require('../error/errorHandler');
+const { logger, AppError } = require('../error/errorHandler');
 
 const generateHash = (name, timestamp) => {
     try {
         if (!name || !timestamp) {
-            throw new Error('name과 timestamp는 필수입니다.');
+            throw new AppError('name과 timestamp는 필수입니다.', 400);
         }
 
         logger.info('해시 생성 시작', { name, timestamp: timestamp.toISOString() });
@@ -28,7 +28,10 @@ const generateHash = (name, timestamp) => {
             name,
             timestamp: timestamp?.toISOString()
         });
-        throw error;
+        if (error instanceof AppError) {
+            throw error;
+        }
+        throw new AppError('해시 생성 중 오류가 발생했습니다', 500);
     }
 };
 

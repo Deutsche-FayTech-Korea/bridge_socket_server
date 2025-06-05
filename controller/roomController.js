@@ -4,32 +4,20 @@ const { AppError } = require('../common/error/errorHandler');
 const roomService = require('../service/roomService');
 
 const roomController = {
-    generateRoomId: async (req, res, next) => {
-        try {
-            const { roomName } = req.body;
-            const result = roomService.generateRoomId(roomName);
-
-            res.json({
-                success: true,
-                roomId: result.roomId,
-                roomName: result.roomName,
-                timestamp: result.timestamp.toISOString()
-            });
-        } catch (error) {
-            next(error);
-        }
-    },
-
     createRoom: async (req, res, next) => {
         try {
-            const { mode, roomId, roomName } = req.body;
+            const { mode, roomName, madeBy } = req.body;
             
-            const result = await roomService.createRoom(mode, roomId, roomName);
+            // roomId 생성
+            const { roomId, timestamp } = roomService.generateRoomId(roomName);
+            
+            // 방 생성
+            const result = await roomService.createRoom(mode, roomId, roomName, madeBy);
+            
             res.json({
                 success: true,
                 message: "방 생성 성공",
-                mode: result.mode,
-                roomId: result.roomId,
+                ...result,
                 timestamp: result.timestamp.toISOString()
             });
         } catch (error) {
