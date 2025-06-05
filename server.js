@@ -2,27 +2,22 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
-const { socketConnect } = require('./socket/socket');
+const { privateSocketConnect } = require('./socket/privateSocket');
+const { publicSocketConnect } = require('./socket/publicSocket');
 const roomRoutes = require('./routes/room/room.routes');
 const jwt = require('jsonwebtoken');
 const { errorHandler, logUtils } = require('./common/error/errorHandler');
 const verifyToken = require('./common/error/jwt');
 const cookieParser = require('cookie-parser');
+const cors = require('cors');
 
 // CORS 설정
-app.use((req, res, next) => {
-    // 특정 도메인에서의 요청만 허용
-    res.header('Access-Control-Allow-Origin', process.env.CLIENT_URL || 'http://localhost:3000');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    res.header('Access-Control-Allow-Credentials', 'true');
-    // OPTIONS 요청 처리
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-    
-    next();
-});
+app.use(cors({
+    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
+}));
 
 // 미들웨어 설정
 app.use(express.json());
@@ -57,6 +52,11 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/socket.html');
 });
 
+// 퍼블릭 라우트
+app.get('/public', (req, res) => {
+    res.sendFile(__dirname + '/public-socket.html');
+});
+
 // 404 에러 핸들러
 app.use((req, res, next) => {
     res.status(404).json({
@@ -71,22 +71,15 @@ app.use((req, res, next) => {
 app.use(errorHandler);
 
 // 소켓 서버 초기화
-const io = socketConnect(http, {
-    path: '/socket.io',
-    cors: {
-        origin: 'http://localhost:3000',
-        methods: ['GET', 'POST'],
-        credentials: true
-    },
-    transports: ['websocket'],
-    allowEIO3: true
-});
+const privateIo = privateSocketConnect(http);
+const publicIo = publicSocketConnect(http);
 
 // 서버 시작
 const PORT = process.env.PORT || 8000;
 http.listen(PORT, '0.0.0.0', () => {
     console.log('=================================');
     console.log(`🚀 서버가 포트 ${PORT}에서 실행 중입니다.`);
-    console.log(`📡 소켓 서버가 시작되었습니다.`);
+    console.log(`📡 프라이빗 소켓 서버가 시작되었습니다.`);
+    console.log(`📡 퍼블릭 소켓 서버가 시작되었습니다.`);
     console.log('=================================');
 }); 

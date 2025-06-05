@@ -238,3 +238,227 @@
 {"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"madeBy":"123123","mode":"public","roomId":"{{roomId}}","roomName":"rwh"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T05:16:04.961Z","user":"anonymous"}
 {"error":{"code":409,"message":"이미 존재하는 방입니다.","stack":"Error: 이미 존재하는 방입니다.\n    at RoomService.createRoom (D:\\workspaces\\nodejs\\socketio\\service\\roomService.js:89:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async createRoom (D:\\workspaces\\nodejs\\socketio\\controller\\roomController.js:27:28)","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"madeBy":"abcac","mode":"public","roomId":"{{roomId}}","roomName":"rwh"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T05:19:54.655Z","user":{}}
 {"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"madeBy":"a123cac","mode":"public","roomName":"rsfdsggdfwh"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T05:38:24.477Z","user":"anonymous"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"madeBy":"a123cac","mode":"public","roomName":"bbbbbrnnnfwh"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T05:54:36.772Z","user":"anonymous"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 16:09:03"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 16:21:42"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 16:23:07"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"mode":"private","roomName":"호ㅗ"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T07:50:12.342Z","user":"anonymous"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 16:55:44"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"mode":"private","roomName":"jmhm"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T08:06:40.366Z","user":"anonymous"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 17:12:11"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 17:15:17"}
+{"level":"error","message":"roomId가 없습니다","socketId":"7h3BOBTu_7XT814xAAAD","timestamp":"2025-06-05 17:15:19"}
+{"level":"error","message":"roomId가 없습니다","socketId":"PG3Q3VkMdHBUjWEOAAAG","timestamp":"2025-06-05 17:15:34"}
+{"level":"error","message":"roomId가 없습니다","socketId":"VpzZz51gfjRc_WSNAAAM","timestamp":"2025-06-05 17:15:47"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"IP6HVTqUBxme5lcYAAAR","timestamp":"2025-06-05T08:33:31.129Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"fB5-26S-wUJ8UH47AAAS","timestamp":"2025-06-05T08:33:31.133Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"9GfoLcwMTeKkayLiAAAU","timestamp":"2025-06-05T08:33:35.856Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"8fi68Jy3jih88cvNAAAW","timestamp":"2025-06-05T08:33:37.772Z"}
+{"level":"error","message":"roomId가 없습니다","socketId":"gCMK5arJPqNZN7CzAAAZ","timestamp":"2025-06-05 17:45:52"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{"mode":"private","roomName":"ㅇㅎㅇㅀㅇ"},"ip":"127.0.0.1","method":"POST","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T08:58:05.133Z","user":"anonymous"}
+{"level":"error","message":"roomId가 없습니다","socketId":"PdYEI8bnUDHLALqDAAAg","timestamp":"2025-06-05 17:59:52"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 18:04:14"}
+{"level":"error","message":"roomId가 없습니다","socketId":"bt7ldFEq6jr_ITOZAAAy","timestamp":"2025-06-05 18:24:51"}
+{"level":"error","message":"roomId가 없습니다","socketId":"uE7oJ4QQuagbTn-DAAA1","timestamp":"2025-06-05 18:25:00"}
+{"level":"error","message":"roomId가 없습니다","socketId":"Wmpm_e_12atQ3n0pAAA6","timestamp":"2025-06-05 18:26:41"}
+{"level":"error","message":"roomId가 없습니다","socketId":"Q8df_r0fcU5-up7bAAA-","timestamp":"2025-06-05 18:26:53"}
+{"level":"error","message":"roomId가 없습니다","socketId":"naeVeFlA9TP9LWjcAABD","timestamp":"2025-06-05 18:27:02"}
+{"level":"error","message":"roomId가 없습니다","socketId":"O-GUSB3gFcTN26g8AABI","timestamp":"2025-06-05 18:27:11"}
+{"level":"error","message":"roomId가 없습니다","socketId":"9c-t5Z9_jr3ncl18AABP","timestamp":"2025-06-05 18:30:16"}
+{"level":"error","message":"roomId가 없습니다","socketId":"XzLl6lPaoarhmsHZAABV","timestamp":"2025-06-05 18:30:23"}
+{"level":"error","message":"roomId가 없습니다","socketId":"qx99eq4HiUJW5QMkAABb","timestamp":"2025-06-05 18:30:28"}
+{"level":"error","message":"roomId가 없습니다","socketId":"YGCJbkCOVvwfCq57AABh","timestamp":"2025-06-05 18:34:13"}
+{"level":"error","message":"roomId가 없습니다","socketId":"2laGD9Eys7WIWbzxAABn","timestamp":"2025-06-05 18:36:02"}
+{"level":"error","message":"roomId가 없습니다","socketId":"SEkYjMSEyeemnF6RAABt","timestamp":"2025-06-05 18:36:41"}
+{"level":"error","message":"roomId가 없습니다","socketId":"VxcNexTy2dAXWYf-AABz","timestamp":"2025-06-05 18:38:58"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 18:51:38"}
+{"error":{"code":400,"message":"토큰 없음","stack":"Error: 토큰 없음\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:35:21)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"127.0.0.1","method":"OPTIONS","params":{},"path":"/api/room/create","query":{},"url":"/api/room/create"},"timestamp":"2025-06-05T09:52:40.268Z","user":"anonymous"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 18:53:01"}
+{"level":"error","message":"잘못된 그리기 데이터","roomId":"8facfb13e45b","socketId":"YiiCDV2zFKL9mVT_AAAB","timestamp":"2025-06-05T09:54:24.354Z"}
+{"error":"잘못된 그리기 데이터입니다","level":"error","message":"그리기 이벤트 처리 실패","roomId":"8facfb13e45b","socketId":"YiiCDV2zFKL9mVT_AAAB","timestamp":"2025-06-05 18:54:24"}
+{"level":"error","message":"잘못된 그리기 데이터","roomId":"8facfb13e45b","socketId":"YiiCDV2zFKL9mVT_AAAB","timestamp":"2025-06-05T09:54:24.706Z"}
+{"error":"잘못된 그리기 데이터입니다","level":"error","message":"그리기 이벤트 처리 실패","roomId":"8facfb13e45b","socketId":"YiiCDV2zFKL9mVT_AAAB","timestamp":"2025-06-05 18:54:24"}
+{"level":"error","message":"잘못된 그리기 데이터","roomId":"8facfb13e45b","socketId":"_l5GoBVK7pjfLgrUAAAD","timestamp":"2025-06-05T09:54:33.761Z"}
+{"error":"잘못된 그리기 데이터입니다","level":"error","message":"그리기 이벤트 처리 실패","roomId":"8facfb13e45b","socketId":"_l5GoBVK7pjfLgrUAAAD","timestamp":"2025-06-05 18:54:33"}
+{"level":"error","message":"잘못된 그리기 데이터","roomId":"8facfb13e45b","socketId":"_l5GoBVK7pjfLgrUAAAD","timestamp":"2025-06-05T09:54:34.226Z"}
+{"error":"잘못된 그리기 데이터입니다","level":"error","message":"그리기 이벤트 처리 실패","roomId":"8facfb13e45b","socketId":"_l5GoBVK7pjfLgrUAAAD","timestamp":"2025-06-05 18:54:34"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 19:26:04"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:10.628Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:10"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:10.645Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:10"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:10.662Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:10"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.095Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.112Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.129Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.145Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.332Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.346Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.362Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.378Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.395Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.412Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.428Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.445Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.466Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.669Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.677Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.694Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.711Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.728Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.744Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.762Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.778Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.911Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.928Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.946Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.962Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.979Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:11.995Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:11"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.013Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.029Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.861Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.878Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.895Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.911Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.928Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:12.944Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:12"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.012Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.029Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.045Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.063Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.083Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.095Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.112Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.128Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.146Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.162Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.179Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.195Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.211Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.228Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.245Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.262Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.278Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.295Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.311Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.345Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.418Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.428Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.445Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.461Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.478Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.495Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:13.511Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:13"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.429Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.445Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.461Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.478Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.494Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.511Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.528Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.544Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.561Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.631Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:14.653Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:14"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.186Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.201Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.211Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.228Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.245Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.262Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.279Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.295Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"level":"error","message":"잘못된 커서 위치 데이터","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05T10:26:15.313Z"}
+{"error":"잘못된 커서 위치 데이터입니다","level":"error","message":"커서 위치 보내기 이벤트 처리 실패","roomId":"3d5e38269c09","socketId":"bKeaBu6Om-_A4pUBAAAB","timestamp":"2025-06-05 19:26:15"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 19:35:52"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 19:53:33"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 19:53:47"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 19:54:15"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"TQtZGHJFChck827rAAA1","timestamp":"2025-06-05T11:14:33.293Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"d8-a0OyQzgtjyaFgAAA3","timestamp":"2025-06-05T11:14:49.198Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"P0BNGXHaRF8CV_8xAAA5","timestamp":"2025-06-05T11:14:49.236Z"}
+{"error":"토큰 유효시간 지남","level":"error","message":"토큰 검증 실패","socketId":"EorM1YOe1s4oCZftAAA7","timestamp":"2025-06-05T11:14:57.009Z"}
+{"error":"Socket already opened","level":"error","message":"Redis 초기화 실패","timestamp":"2025-06-05 20:32:04"}
