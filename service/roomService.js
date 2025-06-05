@@ -57,7 +57,7 @@ class RoomService {
         return `${userStr}-${timeStr}-${randomStr}`;
     }
 
-    async createRoom(mode, roomId, roomName) {
+    async createRoom(mode, roomId, roomName, madeBy) {
         if (!mode) {
             throw new AppError('mode는 필수입니다.', 400);
         }
@@ -67,6 +67,7 @@ class RoomService {
         logger.info('방 생성 시도', { 
             roomId, 
             mode,
+            madeBy,
             action: 'create',
             timestamp: timestamp.toISOString()
         });
@@ -81,6 +82,7 @@ class RoomService {
             logger.warn('방 생성 실패 - 이미 존재하는 방', { 
                 roomId, 
                 mode,
+                madeBy,
                 action: 'create',
                 timestamp: timestamp.toISOString()
             });
@@ -91,6 +93,7 @@ class RoomService {
             roomId,
             roomName,
             mode,
+            madeBy,
             createdAt: timestamp,
             participants: []
         });
@@ -98,6 +101,7 @@ class RoomService {
         logger.info('방 생성 완료', { 
             roomId, 
             mode,
+            madeBy,
             action: 'create',
             timestamp: timestamp.toISOString()
         });
@@ -105,7 +109,9 @@ class RoomService {
         return {
             roomId,
             mode,
-            timestamp
+            madeBy,
+            timestamp,
+            participants: []
         };
     }
 

@@ -1,0 +1,46 @@
+config:
+  target: "https://www.kimtuna.kr"
+  phases:
+    - duration: 5
+      arrivalRate: 5
+  processor: "./cookieProcessor.js"
+
+scenarios:
+  - name: "Login → Create Room Full Test"
+    beforeScenario: "setVariables"
+    flow:
+      - post:
+          url: "/board/api/auth/login"
+          json:
+            email: "0531_test_{{ vu }}@example.com"
+            password: "tutu"
+          expect:
+            - statusCode: 200
+          afterResponse: "handleLoginResponse"  # ✅ 추가 필수!
+          onError:
+            - log: "로그인 실패 - 상태 코드: {{ response.statusCode }}, 응답: {{ response.body }}"
+
+      - log: "Captured authToken: {{ authToken }}"
+
+      - post:
+          url: "http://localhost:8000/api/room/generate-id"
+          headers:
+            Authorization: "Bearer {{ authToken }}"
+          json:
+            roomName: "test_room_{{ $randomNumber(1,1000) }}"
+          capture:
+            - json: "$.roomId"
+              as: "generatedRoomId"
+            - json: "$.roomName"
+              as: "generatedRoomName"
+
+      - log: "Generated RoomId: {{ generatedRoomId }}, RoomName: {{ generatedRoomName }}"
+
+      - post:
+          url: "http://localhost:8000/api/room/create"
+          headers:
+            Authorization: "Bearer {{ authToken }}"
+          json:
+            mode: "{{ $randomElement(['public', 'private']) }}"
+            roomName: "{{ generatedRoomName }}"
+            roomId: "{{ generatedRoomId }}"

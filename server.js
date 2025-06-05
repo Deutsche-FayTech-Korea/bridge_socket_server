@@ -12,7 +12,7 @@ const cookieParser = require('cookie-parser');
 // CORS 설정
 app.use((req, res, next) => {
     // 특정 도메인에서의 요청만 허용
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.header('Access-Control-Allow-Origin', process.env.CLIENT_URL || 'http://localhost:3000');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     res.header('Access-Control-Allow-Credentials', 'true');
@@ -27,7 +27,20 @@ app.use((req, res, next) => {
 // 미들웨어 설정
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
+app.use(cookieParser(process.env.COOKIE_SECRET || 'your-secret-key'));
+
+// 쿠키 설정 미들웨어
+app.use((req, res, next) => {
+    if (req.cookies.access_token) {
+        res.cookie('access_token', req.cookies.access_token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'lax',
+            maxAge: 24 * 60 * 60 * 1000 // 24시간
+        });
+    }
+    next();
+});
 
 // 로깅 미들웨어
 app.use(logUtils.logRequest);
@@ -71,7 +84,7 @@ const io = socketConnect(http, {
 
 // 서버 시작
 const PORT = process.env.PORT || 8000;
-http.listen(PORT, () => {
+http.listen(PORT, '0.0.0.0', () => {
     console.log('=================================');
     console.log(`🚀 서버가 포트 ${PORT}에서 실행 중입니다.`);
     console.log(`📡 소켓 서버가 시작되었습니다.`);
