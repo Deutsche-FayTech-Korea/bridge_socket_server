@@ -8,6 +8,7 @@ function registerCursorHandlers(socket) {
                 logger.error('잘못된 커서 위치 데이터', {
                     roomId,
                     socketId: socket.id,
+                    data,
                     timestamp: new Date().toISOString()
                 });
                 throw new AppError('잘못된 커서 위치 데이터입니다', 400);
@@ -22,6 +23,7 @@ function registerCursorHandlers(socket) {
 
             logger.info('커서 위치 받았을 때 이벤트', {
                 roomId,
+                data,
                 socketId: socket.id,
                 userId: socket.userId,
                 timestamp: new Date().toISOString()
