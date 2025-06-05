@@ -1,0 +1,47 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+명세서 작성은 다음과 같은 폼으로 작성해야 합니다:
+# [method]  user/{userId}/list/{listId}
+
+- endpoint에 대한 간단한 설명 한줄줄
+
+## Request
+
+- request header
+
+- request body
+
+<aside>
+📌 Response에 대한 정보를 아래에 작성해주세요.
+해당 API는 어떤 응답 데이터를 내려주는지!
+
+예시 Response JSON도 같이 넣어주면 클라이언트분들이 편하게 서버 통신을 준비하실 수 있답니다.
+
+실패에 대한 경우도 같이 작성해주면 더더욱 좋아요.
+
+</aside>
+
+## Response
+
+
+### Response Body
+
+-정상적으로 작동하였을 때 response
+
+### ❌ 실패
+
+- error 상황들들 과 그 json, error 상황들은 Apperror를 찾아보세요요
+
+ex) - GET을 실패했을 경우
+
+```json
+{
+    "status": 404,
+    "success": false,
+    "message": ""
+}
+```
+

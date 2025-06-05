@@ -1,0 +1,70 @@
+config:
+  phases:
+    - duration: 5
+      arrivalRate: 5
+  processor: "./cookieProcessor.js"
+
+scenarios:
+  - name: "Register Test"
+    target: "https://www.kimtuna.kr"
+    beforeScenario: "setVariables"
+    flow:
+      # - post:
+      #     url: "/board/api/auth/register"
+      #     json:
+      #       name: "0520_test_{{{ vu }}"
+      #       email: "0520_test_{{ vu }}@example.com"
+      #       password: "tutu"
+
+
+      - post:
+          url: "/board/api/auth/login"
+          json:
+            email: "0520_test_{{ vu }}@example.com"
+            password: "tutu"
+
+
+
+  - name: "Create Room Test"
+    target: "localhost:8000"
+    beforeScenario: "setVariables"
+    flow:
+      # 1. 먼저 roomId 생성
+      - post:
+          url: "/board/api/room/generate-id"
+          json:
+            roomName: "test_room_{{ $randomNumber(1,1000) }}"
+          capture:
+            - json: "$.roomId"
+              as: "generatedRoomId"
+            - json: "$.roomName"
+              as: "generatedRoomName"
+
+      # 2. 생성된 roomId로 방 생성
+      - post:
+          url: "/board/api/room/create"
+          json:
+            mode: "{{ $randomElement(['public', 'private']) }}"
+            roomName: "{{ generatedRoomName }}"
+            roomId: "{{ generatedRoomId }}"
+
+
+      # - engine: "socketio"
+      #   flow:
+      #     - emit:
+      #         channel: "join_room"
+      #         data:
+      #           roomId: "testroom"
+      #           userName: "user_{{ $randomNumber(1,1000) }}"
+
+      #     - think: 2
+
+      #     - emit:
+      #         channel: "cursor_move"
+      #         data:
+      #           roomId: "testroom"
+      #           userName: "user_{{ $randomNumber(1,1000) }}"
+      #           x: 123
+      #           y: 456
+
+      #     - think: 1
