@@ -57,7 +57,7 @@ class RoomService {
         return `${userStr}-${timeStr}-${randomStr}`;
     }
 
-    async createRoom(mode, roomId, roomName, madeBy) {
+    async createRoom(mode, roomId, roomName, madeBy, userName) {
         if (!mode) {
             throw new AppError('mode는 필수입니다.', 400);
         }
@@ -95,7 +95,11 @@ class RoomService {
             mode,
             madeBy,
             createdAt: timestamp,
-            participants: []
+            participants: [{
+                userId: madeBy.userId,
+                userName: madeBy.username,
+                joinedAt: timestamp
+            }]
         });
 
         logger.info('방 생성 완료', { 
@@ -110,8 +114,13 @@ class RoomService {
             roomId,
             mode,
             madeBy,
+            userName,
             timestamp,
-            participants: []
+            participants: [{
+                userId: madeBy.userId,
+                userName: madeBy.username,
+                joinedAt: timestamp
+            }]
         };
     }
 
