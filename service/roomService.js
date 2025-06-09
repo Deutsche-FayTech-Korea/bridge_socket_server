@@ -63,7 +63,7 @@ class RoomService {
         }
 
         const timestamp = new Date();
-        
+
         logger.info('방 생성 시도', { 
             roomId, 
             mode,
@@ -89,13 +89,28 @@ class RoomService {
             throw new AppError('이미 존재하는 방입니다.', 409);
         }
 
+        // madeBy가 객체가 아닐 경우를 대비
+        let madeByObj = madeBy;
+        if (typeof madeBy !== 'object' || !madeBy.userId || !madeBy.username) {
+            throw new AppError('madeBy는 userId와 username을 포함한 객체여야 합니다.', 400);
+        }
+
         await collection.insertOne({
             roomId,
             roomName,
             mode,
-            madeBy,
+            madeBy: {
+                userId: madeByObj.userId,
+                username: madeByObj.username
+            },
             createdAt: timestamp,
-            participants: []
+            participants: [
+                {
+                    userId: madeByObj.userId,
+                    userName: madeByObj.username,
+                    joinedAt: timestamp
+                }
+            ]
         });
 
         logger.info('방 생성 완료', { 
@@ -109,14 +124,29 @@ class RoomService {
         return {
             roomId,
             mode,
-            madeBy,
+            madeBy: {
+                userId: madeByObj.userId,
+                username: madeByObj.username
+            },
             timestamp,
-            participants: []
+            participants: [
+                {
+                    userId: madeByObj.userId,
+                    userName: madeByObj.username,
+                    joinedAt: timestamp
+                }
+            ]
         };
     }
 
     async joinRoom(roomId, mode, req) {
-        const userId = req.cookies.access_token ? jwt.decode(req.cookies.access_token).userId : null;
+        let userId = null;
+        let username = null;
+        if (req.cookies.access_token) {
+            const decoded = jwt.decode(req.cookies.access_token);
+            userId = decoded.userId;
+            username = decoded.username;
+        }
         
         if (!roomId || !mode ) {
             throw new AppError('roomId, mode는 필수입니다.', 400);
@@ -138,6 +168,7 @@ class RoomService {
                 $push: { 
                     participants: {
                         userId,
+                        userName: username,
                         joinedAt: new Date()
                     }
                 }
@@ -148,6 +179,7 @@ class RoomService {
             roomId, 
             mode,
             userId,
+            username,
             action: 'join',
             timestamp: new Date().toISOString()
         });
@@ -156,9 +188,10 @@ class RoomService {
             roomId,
             mode,
             userId,
+            username,
             timestamp: new Date()
         };
     }
 }
 
-module.exports = new RoomService(); 
+module.exports = new RoomService();
