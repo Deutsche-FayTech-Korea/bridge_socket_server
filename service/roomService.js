@@ -125,8 +125,8 @@ class RoomService {
     }
 
     async joinRoom(roomId, mode, req) {
-        if (!roomId || !mode) {
-            throw new AppError('roomId, mode는 필수입니다.', 400);
+        if (!roomId) {
+            throw new AppError('roomId는 필수입니다.', 400);
         }
 
         const userId = req.user?.userId;
@@ -157,7 +157,7 @@ class RoomService {
 
         logger.info('방 참가 완료', { 
             roomId, 
-            mode,
+            mode: room.mode,
             userId,
             userName,
             action: 'join',
@@ -166,7 +166,7 @@ class RoomService {
 
         return {
             roomId,
-            mode,
+            mode: room.mode,
             userId,
             userName,
             timestamp: new Date()
@@ -220,4 +220,4 @@ class RoomService {
     }
 }
 
-module.exports = new RoomService(); 
+module.exports = new RoomService();
