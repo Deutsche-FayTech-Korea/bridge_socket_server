@@ -173,9 +173,9 @@ class RoomService {
         };
     }
 
-    async leaveRoom(roomId, userId) {
-        if (!roomId || !userId) {
-            throw new AppError('roomId와 userId는 필수입니다.', 400);
+    async leaveRoom(roomId, req) {
+        if (!roomId) {
+            throw new AppError('roomId는 필수입니다.', 400);
         }
 
         const client = await this.getMongoClient();
@@ -190,23 +190,33 @@ class RoomService {
 
         // 참가자 목록에서 사용자 제거
         const result = await collection.updateOne(
-            { roomId },
+            { 
+                roomId,
+                'participants.userId': String(req.user.userId)
+            },
             {
                 $pull: {
-                    participants: { userId: String(userId) }
+                    participants: { userId: String(req.user.userId) }
                 }
             }
         );
 
+        if (result.modifiedCount === 0) {
+            throw new AppError('방에 참가 중이지 않습니다.', 400);
+        }
+
         logger.info('방 퇴장 결과', {
             roomId,
-            userId,
+            userId: req.user.userId,
             modifiedCount: result.modifiedCount,
             action: 'leave_result',
             timestamp: new Date().toISOString()
         });
 
-    
+        return {
+            roomId,
+            timestamp: new Date()
+        };
     }
 }
 

@@ -47,14 +47,14 @@ const roomController = {
 
     leaveRoom: async (req, res, next) => {
         try {
-            const { roomId } = req.params;
-            const userId = req.user?.userId;
+            const roomId = req.params.roomId;
+            console.log('roomId:', roomId); // 디버깅용
 
-            if (!roomId || !userId) {
-                throw new AppError('roomId와 userId는 필수입니다.', 400);
+            if (!roomId) {
+                throw new AppError('roomId는 필수입니다.', 400);
             }
 
-            const result = await roomService.leaveRoom(roomId, userId);
+            const result = await roomService.leaveRoom(roomId, req);
             res.json({
                 success: true,
                 message: "방 퇴장 성공",
