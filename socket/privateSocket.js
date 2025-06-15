@@ -24,8 +24,11 @@ function privateSocketConnect(server) {
         path: '/socket.io',
         transports: ['websocket'],
         allowEIO3: true,
-        pingTimeout: 60000,
-        pingInterval: 25000
+        pingTimeout: 30000,
+        pingInterval: 15000,
+        maxHttpBufferSize: 1e6,
+        connectTimeout: 45000,
+        upgradeTimeout: 30000
     });
 
     // Admin UI 미들웨어 적용

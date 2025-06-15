@@ -48,7 +48,7 @@ const roomController = {
     leaveRoom: async (req, res, next) => {
         try {
             const { roomId } = req.params;
-            const userId = req.user?.id;
+            const userId = req.user?.userId;
 
             if (!roomId || !userId) {
                 throw new AppError('roomId와 userId는 필수입니다.', 400);
