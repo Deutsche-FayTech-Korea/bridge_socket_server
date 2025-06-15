@@ -53,7 +53,7 @@ function publicSocketConnect(server) {
         const roomId = socket.handshake.query.roomId;
         // 이벤트 핸들러 등록
         registerRoomHandlers(socket);
-        registerDrawingHandlers(socket);
+        registerDrawingHandlers(socket, io);
         registerCursorHandlers(socket);
 
         // 연결 해제 이벤트
@@ -97,4 +97,4 @@ module.exports = {
     getPublicIO,
     connectToPublicRoom,
     disconnectFromPublicRoom
-}; 
+};
