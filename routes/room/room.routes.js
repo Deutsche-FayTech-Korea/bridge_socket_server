@@ -11,4 +11,7 @@ router.post('/create', roomController.createRoom);
 // 방 참가
 router.get('/join', roomController.joinRoom);
 
+// 방 퇴장
+router.delete('/:roomId/leave', roomController.leaveRoom);
+
 module.exports = router; 
