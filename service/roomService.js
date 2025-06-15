@@ -100,7 +100,7 @@ class RoomService {
                 userName: madeBy.username,
                 joinedAt: timestamp
             }]
-        });
+        }); 
 
         logger.info('방 생성 완료', { 
             roomId, 
@@ -125,11 +125,12 @@ class RoomService {
     }
 
     async joinRoom(roomId, mode, req) {
-        const userId = req.cookies.access_token ? jwt.decode(req.cookies.access_token).userId : null;
-        
-        if (!roomId || !mode ) {
+        if (!roomId || !mode) {
             throw new AppError('roomId, mode는 필수입니다.', 400);
         }
+
+        const userId = req.user?.userId;
+        const userName = req.user?.username;
 
         const client = await this.getMongoClient();
         const database = client.db('whiteboard_db');
@@ -140,13 +141,14 @@ class RoomService {
             throw new AppError('존재하지 않는 방입니다.', 404);
         }
 
-        // 방 참가자 정보 업데이트
+        // 방 참가자 정보 업데이트 (중복 방지)
         await collection.updateOne(
             { roomId },
             { 
-                $push: { 
+                $addToSet: { 
                     participants: {
                         userId,
+                        userName,
                         joinedAt: new Date()
                     }
                 }
@@ -157,6 +159,7 @@ class RoomService {
             roomId, 
             mode,
             userId,
+            userName,
             action: 'join',
             timestamp: new Date().toISOString()
         });
@@ -164,6 +167,46 @@ class RoomService {
         return {
             roomId,
             mode,
+            userId,
+            userName,
+            timestamp: new Date()
+        };
+    }
+
+    async leaveRoom(roomId, userId) {
+        if (!roomId || !userId) {
+            throw new AppError('roomId와 userId는 필수입니다.', 400);
+        }
+
+        const client = await this.getMongoClient();
+        const database = client.db('whiteboard_db');
+        const collection = database.collection('whiteboard_rooms');
+
+        // 방이 존재하는지 확인
+        const room = await collection.findOne({ roomId });
+        if (!room) {
+            throw new AppError('존재하지 않는 방입니다.', 404);
+        }
+
+        // 참가자 목록에서 사용자 제거
+        await collection.updateOne(
+            { roomId },
+            {
+                $pull: {
+                    participants: { userId }
+                }
+            }
+        );
+
+        logger.info('방 퇴장 완료', {
+            roomId,
+            userId,
+            action: 'leave',
+            timestamp: new Date().toISOString()
+        });
+
+        return {
+            roomId,
             userId,
             timestamp: new Date()
         };

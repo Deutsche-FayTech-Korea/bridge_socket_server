@@ -6,13 +6,13 @@ const roomService = require('../service/roomService');
 const roomController = {
     createRoom: async (req, res, next) => {
         try {
-            const { mode, roomName, madeBy, userName } = req.body;
+            const { mode, roomName, madeBy } = req.body;
             
             // roomId 생성
             const { roomId, timestamp } = roomService.generateRoomId(roomName);
             
             // 방 생성
-            const result = await roomService.createRoom(mode, roomId, roomName, madeBy, userName);
+            const result = await roomService.createRoom(mode, roomId, roomName, madeBy);
             
             res.json({
                 success: true,
