@@ -18028,3 +18028,116 @@
 {"action":"leave_result","level":"info","message":"방 퇴장 결과","modifiedCount":1,"roomId":"4ba2f5925931","timestamp":"2025-06-15T11:35:50.814Z","userId":37}
 {"level":"info","message":"API 응답","method":"DELETE","responseTime":null,"statusCode":200,"timestamp":"2025-06-15T11:35:50.815Z","url":"/api/room/4ba2f5925931/leave"}
 {"level":"info","message":"연결 해제","roomId":"4ba2f5925931","socketId":"aFXuz3Ex2zSC_AK_AAAD","timestamp":"2025-06-15T11:35:56.514Z","userId":38}
+{"level":"info","message":"기존 Redis 클라이언트 재사용","timestamp":"2025-06-15 22:12:22"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:22"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:22"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:22"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:23"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:23"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:24"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:26"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:28"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:30"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:32"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:34"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:36"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:39"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:41"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:43"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:45"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:47"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:49"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:51"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:53"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:55"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:12:57"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:00"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:02"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:04"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:06"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:08"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:10"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:12"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:14"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:17"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:19"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:21"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:23"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:25"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:27"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:29"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:31"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:33"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:36"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:38"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:40"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:42"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:44"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:46"}
+{"error":"","level":"error","message":"Redis 클라이언트 에러","timestamp":"2025-06-15 22:13:48"}
+{"level":"info","message":"✅ Redis 클라이언트 연결됨","timestamp":"2025-06-15 22:13:50"}
+{"level":"info","message":"✅ Redis 구독자 연결됨","timestamp":"2025-06-15 22:13:50"}
+{"level":"info","message":"✅ Redis 초기화 완료","timestamp":"2025-06-15 22:13:50"}
+{"body":{},"ip":"127.0.0.1","level":"info","message":"API 요청","method":"GET","params":{},"query":{},"timestamp":"2025-06-15T13:16:02.472Z","url":"/favicon.ico"}
+{"level":"info","message":"API 응답","method":"GET","responseTime":null,"statusCode":404,"timestamp":"2025-06-15T13:16:02.476Z","url":"/favicon.ico"}
+{"auth":{},"headers":{"accept-encoding":"gzip, deflate, br, zstd","accept-language":"ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7","cache-control":"no-cache","connection":"Upgrade","cookie":"access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzcsIm5hbWUiOiJ0ZXN0MSIsImVtYWlsIjoidGVzdDFAZXhhbXBsZS5jb20iLCJoYXNoIjoiIiwiZXhwIjoxNzQ5OTk0MDU2fQ.-lnGVtjvffM4ujJUu5Bf8ZeSwVL2oXZ5Z0zoTHUHzIo; refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzcsIm5hbWUiOiIiLCJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwiaGFzaCI6IiIsImV4cCI6MTc1MDU5Nzk1Nn0.GWXIs_fju8geN9OUhpZx-NMxZzaWcPanX4OsZmrcNT0","host":"localhost:8000","origin":"http://localhost:3000","pragma":"no-cache","sec-websocket-extensions":"permessage-deflate; client_max_window_bits","sec-websocket-key":"jWNSzmZeon4e4LEvMB/Pdg==","sec-websocket-version":"13","upgrade":"websocket","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"},"level":"info","message":"소켓 연결 시도","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15 22:16:20"}
+{"authData":{},"isAdmin":false,"level":"info","message":"Admin 인증 결과","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15 22:16:20"}
+{"level":"info","message":"새로운 연결 시도","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15T13:16:20.432Z"}
+{"level":"info","message":"roomId","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15T13:16:20.433Z"}
+{"level":"info","message":"방 참가 완료","roomId":"bc093d877903","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15 22:16:20"}
+{"level":"info","message":"방 참가","roomId":"bc093d877903","roomParticipants":[{"isNewJoiner":true,"socketId":"XEkLNyOXWr3ifLu0AAAB"}],"socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15T13:16:20.440Z","userId":37}
+{"level":"info","message":"연결 해제","roomId":"bc093d877903","socketId":"XEkLNyOXWr3ifLu0AAAB","timestamp":"2025-06-15T13:16:21.311Z","userId":37}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"Mdm450vfDxKYqwNzAAAD","timestamp":"2025-06-15T13:19:23.051Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":true,"socketId":"Mdm450vfDxKYqwNzAAAD"}],"socketId":"Mdm450vfDxKYqwNzAAAD","timestamp":"2025-06-15T13:19:23.054Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"vzcrTPM3KSyhkbbeAAAF","timestamp":"2025-06-15T13:19:23.060Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"Mdm450vfDxKYqwNzAAAD"},{"isNewJoiner":true,"socketId":"vzcrTPM3KSyhkbbeAAAF"}],"socketId":"vzcrTPM3KSyhkbbeAAAF","timestamp":"2025-06-15T13:19:23.062Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"vzcrTPM3KSyhkbbeAAAF","timestamp":"2025-06-15T13:19:27.752Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"Mdm450vfDxKYqwNzAAAD","timestamp":"2025-06-15T13:19:27.754Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"u4WH3yoEBQ7qFHkaAAAH","timestamp":"2025-06-15T13:19:39.084Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":true,"socketId":"u4WH3yoEBQ7qFHkaAAAH"}],"socketId":"u4WH3yoEBQ7qFHkaAAAH","timestamp":"2025-06-15T13:19:39.086Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"mgEWPSsGtMTa_0rQAAAJ","timestamp":"2025-06-15T13:19:39.101Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"u4WH3yoEBQ7qFHkaAAAH"},{"isNewJoiner":true,"socketId":"mgEWPSsGtMTa_0rQAAAJ"}],"socketId":"mgEWPSsGtMTa_0rQAAAJ","timestamp":"2025-06-15T13:19:39.104Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"mgEWPSsGtMTa_0rQAAAJ","timestamp":"2025-06-15T13:20:50.006Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"KQYMF5FNC67R5-_mAAAL","timestamp":"2025-06-15T13:20:50.691Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"u4WH3yoEBQ7qFHkaAAAH"},{"isNewJoiner":true,"socketId":"KQYMF5FNC67R5-_mAAAL"}],"socketId":"KQYMF5FNC67R5-_mAAAL","timestamp":"2025-06-15T13:20:50.693Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"u4WH3yoEBQ7qFHkaAAAH","timestamp":"2025-06-15T13:20:53.584Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"L62Rhy-VUsjg0uMGAAAN","timestamp":"2025-06-15T13:20:54.154Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"KQYMF5FNC67R5-_mAAAL"},{"isNewJoiner":true,"socketId":"L62Rhy-VUsjg0uMGAAAN"}],"socketId":"L62Rhy-VUsjg0uMGAAAN","timestamp":"2025-06-15T13:20:54.154Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"KQYMF5FNC67R5-_mAAAL","timestamp":"2025-06-15T13:21:00.899Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"23nke0IOSKSryP87AAAP","timestamp":"2025-06-15T13:21:01.904Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"L62Rhy-VUsjg0uMGAAAN"},{"isNewJoiner":true,"socketId":"23nke0IOSKSryP87AAAP"}],"socketId":"23nke0IOSKSryP87AAAP","timestamp":"2025-06-15T13:21:01.906Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"L62Rhy-VUsjg0uMGAAAN","timestamp":"2025-06-15T13:24:38.773Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"23nke0IOSKSryP87AAAP","timestamp":"2025-06-15T13:24:38.779Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"R3Tx8-Tv74fakGZ-AAAR","timestamp":"2025-06-15T13:24:39.084Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":true,"socketId":"R3Tx8-Tv74fakGZ-AAAR"}],"socketId":"R3Tx8-Tv74fakGZ-AAAR","timestamp":"2025-06-15T13:24:39.085Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"Ddexa_D9_NenHAlbAAAT","timestamp":"2025-06-15T13:24:39.101Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"R3Tx8-Tv74fakGZ-AAAR"},{"isNewJoiner":true,"socketId":"Ddexa_D9_NenHAlbAAAT"}],"socketId":"Ddexa_D9_NenHAlbAAAT","timestamp":"2025-06-15T13:24:39.102Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"Ddexa_D9_NenHAlbAAAT","timestamp":"2025-06-15T13:24:58.877Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"R3Tx8-Tv74fakGZ-AAAR","timestamp":"2025-06-15T13:25:03.858Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"LeYrStK0dyeulUGjAAAV","timestamp":"2025-06-15T13:25:04.766Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":true,"socketId":"LeYrStK0dyeulUGjAAAV"}],"socketId":"LeYrStK0dyeulUGjAAAV","timestamp":"2025-06-15T13:25:04.767Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"LeYrStK0dyeulUGjAAAV","timestamp":"2025-06-15T13:25:15.750Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"iC-wVnxo-LLzuZzkAAAX","timestamp":"2025-06-15T13:25:17.995Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":true,"socketId":"iC-wVnxo-LLzuZzkAAAX"}],"socketId":"iC-wVnxo-LLzuZzkAAAX","timestamp":"2025-06-15T13:25:17.996Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"iAA8vtzNCS6m8NDYAAAZ","timestamp":"2025-06-15T13:25:19.835Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"iC-wVnxo-LLzuZzkAAAX"},{"isNewJoiner":true,"socketId":"iAA8vtzNCS6m8NDYAAAZ"}],"socketId":"iAA8vtzNCS6m8NDYAAAZ","timestamp":"2025-06-15T13:25:19.835Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"iC-wVnxo-LLzuZzkAAAX","timestamp":"2025-06-15T13:26:57.474Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:26:58.081Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"iAA8vtzNCS6m8NDYAAAZ"},{"isNewJoiner":true,"socketId":"cplNDWAbsYSaC-6zAAAb"}],"socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:26:58.083Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"iAA8vtzNCS6m8NDYAAAZ","timestamp":"2025-06-15T13:26:58.311Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"iAA8vtzNCS6m8NDYAAAZ","timestamp":"2025-06-15T13:26:58.414Z"}
+{"level":"info","message":"퍼블릭 연결 해제","socketId":"iAA8vtzNCS6m8NDYAAAZ","timestamp":"2025-06-15T13:26:58.492Z"}
+{"level":"info","message":"새로운 퍼블릭 연결 시도","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:26:59.045Z"}
+{"level":"info","message":"방 참가","roomId":"public","roomParticipants":[{"isNewJoiner":false,"socketId":"cplNDWAbsYSaC-6zAAAb"},{"isNewJoiner":true,"socketId":"20APNChkn2O15y6LAAAd"}],"socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:26:59.046Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:26:59.551Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:26:59.923Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:00.782Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:01.161Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:27:01.809Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:27:02.174Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:03.234Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:03.519Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:27:04.138Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"cplNDWAbsYSaC-6zAAAb","timestamp":"2025-06-15T13:27:04.635Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:05.414Z"}
+{"level":"info","message":"그리기 이벤트 전송","roomId":"public","socketId":"20APNChkn2O15y6LAAAd","timestamp":"2025-06-15T13:27:05.862Z"}

@@ -12,26 +12,30 @@ function publicSocketConnect(server) {
     // Socket.IO 초기화
     io = new Server(server, {
         cors: {
-            origin: '*', // 퍼블릭 서버는 모든 origin 허용
+            origin: [
+                process.env.CLIENT_URL || 'http://localhost:3000',
+                'https://admin.socket.io', // 공식 Admin UI 주소
+            ],
             methods: ['GET', 'POST'],
             credentials: true,
-            allowedHeaders: ['Content-Type']
+            allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']
         },
         path: '/public-socket.io/',
         transports: ['websocket'],
         allowEIO3: true,
-        pingTimeout: 60000,
-        pingInterval: 25000
+        pingTimeout: 30000,
+        pingInterval: 15000,
+        maxHttpBufferSize: 1e6,
+        connectTimeout: 45000,
+        upgradeTimeout: 30000
     });
 
-    // Socket.IO Admin UI 설정
+    // Admin UI 미들웨어 적용
     instrument(io, {
-        auth: {
-            type: "basic",
-            username: "admin",
-            password: "admin123" // 실제 운영 환경에서는 더 강력한 비밀번호 사용
-        },
-        mode: "development"
+        auth: false,
+        mode: "development",
+        namespaceName: "/admin",
+        serverId: "admin-server"
     });
     
     // Redis 초기화
