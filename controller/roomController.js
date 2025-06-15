@@ -43,6 +43,27 @@ const roomController = {
         } catch (error) {
             next(error);
         }
+    },
+
+    leaveRoom: async (req, res, next) => {
+        try {
+            const { roomId } = req.params;
+            const userId = req.user?.id;
+
+            if (!roomId || !userId) {
+                throw new AppError('roomId와 userId는 필수입니다.', 400);
+            }
+
+            const result = await roomService.leaveRoom(roomId, userId);
+            res.json({
+                success: true,
+                message: "방 퇴장 성공",
+                roomId: result.roomId,
+                timestamp: result.timestamp.toISOString()
+            });
+        } catch (error) {
+            next(error);
+        }
     }
 }
 

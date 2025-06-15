@@ -4,6 +4,7 @@ const { initializeRedis } = require('./redis');
 const { registerRoomHandlers } = require('./handlers/roomHandler');
 const { registerDrawingHandlers } = require('./handlers/drawingHandler');
 const { registerCursorHandlers } = require('./handlers/cursorHandler');
+const { instrument } = require("@socket.io/admin-ui");
 
 let io;
 
@@ -23,6 +24,15 @@ function publicSocketConnect(server) {
         pingInterval: 25000
     });
 
+    // Socket.IO Admin UI 설정
+    instrument(io, {
+        auth: {
+            type: "basic",
+            username: "admin",
+            password: "admin123" // 실제 운영 환경에서는 더 강력한 비밀번호 사용
+        },
+        mode: "development"
+    });
     
     // Redis 초기화
     initializeRedis(io).catch(err => {
