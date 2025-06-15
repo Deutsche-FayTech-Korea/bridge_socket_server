@@ -527,3 +527,24 @@
 {"level":"error","message":"쿠키가 없음","socketId":"u62zbAIL8WSP1e5GAAAI","timestamp":"2025-06-15T06:43:41.439Z"}
 {"level":"error","message":"쿠키가 없음","socketId":"UVN49VVZ0EqjnXA6AAAG","timestamp":"2025-06-15T06:44:34.522Z"}
 {"level":"error","message":"쿠키가 없음","socketId":"uIpX7QyHWXP7GiDgAAAI","timestamp":"2025-06-15T06:45:00.033Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"hEu4QRy2QkBWxhYBAAAF","timestamp":"2025-06-15T06:54:37.364Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"HkYah5RtjCjRiqAxAAAH","timestamp":"2025-06-15T06:54:40.555Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"LehUQizusxwMjR5-AAAJ","timestamp":"2025-06-15T06:55:20.535Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"2XL5PzPneuPs32aaAAAN","timestamp":"2025-06-15T06:55:44.127Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"EjoZqMTNLASOf3bdAAAQ","timestamp":"2025-06-15T06:56:31.842Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"-HlEGip2bWgPjwxrAAAG","timestamp":"2025-06-15T07:00:01.939Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"u1qoEb4YhVrgBHEwAAAK","timestamp":"2025-06-15T07:01:36.023Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"23L04VGXn4uujuxpAAAM","timestamp":"2025-06-15T07:01:40.245Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"TbWlIVgkzDffigMPAAAH","timestamp":"2025-06-15T07:02:34.275Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"hQkObkCn54bW8Zr8AAAL","timestamp":"2025-06-15T07:03:18.181Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"tOaUALjsj2RVounZAAAN","timestamp":"2025-06-15T07:03:21.045Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"XYYM4edxFOa_1XfiAAAC","timestamp":"2025-06-15T07:04:12.097Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"3HkRMtmWJOYVUwZWAAAD","timestamp":"2025-06-15T07:04:12.103Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"7Sm7peZwVW1lA2-kAAAF","timestamp":"2025-06-15T07:04:21.977Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"4FYf83TjPiX9_xfUAAAH","timestamp":"2025-06-15T07:04:26.994Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"oK4Wf-jv3auyy4FRAAAJ","timestamp":"2025-06-15T07:04:38.693Z"}
+{"error":"accessToken is not defined","level":"error","message":"소켓 연결 처리 실패","socketId":"Jq8kSuHFGDu5PZSWAAAN","timestamp":"2025-06-15T07:04:47.948Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"DYejWQ6pyOk0InScAAAB","timestamp":"2025-06-15T07:06:26.046Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"T4tY5agx5qsOW2QXAAAJ","timestamp":"2025-06-15T07:07:14.628Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"U1cnXTjrYOSBux_KAAAL","timestamp":"2025-06-15T07:07:36.694Z"}
+{"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"127.0.0.1","method":"GET","params":{},"path":"/api/room/join/","query":{"mode":"public","roomId":"67c33914677a"},"url":"/api/room/join/?mode=public&roomId=67c33914677a"},"timestamp":"2025-06-15T07:10:42.815Z","user":"anonymous"}

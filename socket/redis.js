@@ -37,16 +37,7 @@ async function initializeRedis(io) {
         logger.info('✅ Redis 클라이언트 연결됨');
         logger.info('✅ Redis 구독자 연결됨');
 
-        // 구독 설정
-        await redisSubscriber.subscribe('drawing-events', (message) => {
-            try {
-                const data = JSON.parse(message);
-                io.to(data.roomId).emit('drawing:public', data);
-            } catch (error) {
-                logger.error('Redis 메시지 처리 실패', { error: error.message });
-            }
-        });
-
+        // Redis는 이제 방 정보와 사용자 정보 저장용으로만 사용
         logger.info('✅ Redis 초기화 완료');
         return redisClient;
     } catch (error) {
@@ -55,22 +46,8 @@ async function initializeRedis(io) {
     }
 }
 
-function getRedisClient() {
-    if (!redisClient) {
-        throw new Error('Redis 클라이언트가 초기화되지 않았습니다.');
-    }
-    return redisClient;
-}
-
-function getRedisSubscriber() {
-    if (!redisSubscriber) {
-        throw new Error('Redis 구독자가 초기화되지 않았습니다.');
-    }
-    return redisSubscriber;
-}
-
 module.exports = {
     initializeRedis,
-    getRedisClient,
-    getRedisSubscriber
+    getRedisClient: () => redisClient,
+    getRedisSubscriber: () => redisSubscriber
 };

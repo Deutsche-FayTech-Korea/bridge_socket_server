@@ -147,7 +147,7 @@ class RoomService {
             { 
                 $addToSet: { 
                     participants: {
-                        userId,
+                        userId: String(userId),
                         userName,
                         joinedAt: new Date()
                     }
