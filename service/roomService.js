@@ -189,27 +189,24 @@ class RoomService {
         }
 
         // 참가자 목록에서 사용자 제거
-        await collection.updateOne(
+        const result = await collection.updateOne(
             { roomId },
             {
                 $pull: {
-                    participants: { userId }
+                    participants: { userId: String(userId) }
                 }
             }
         );
 
-        logger.info('방 퇴장 완료', {
+        logger.info('방 퇴장 결과', {
             roomId,
             userId,
-            action: 'leave',
+            modifiedCount: result.modifiedCount,
+            action: 'leave_result',
             timestamp: new Date().toISOString()
         });
 
-        return {
-            roomId,
-            userId,
-            timestamp: new Date()
-        };
+    
     }
 }
 
