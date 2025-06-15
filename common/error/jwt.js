@@ -18,7 +18,7 @@ const verifyJwtToken = (token) => {
             throw new AppError('토큰 유효시간 지남', 401);
         }
 
-        return decoded.userId;
+        return decoded.id;
     } catch (error) {
         if (error instanceof AppError) {
             throw error;
@@ -46,7 +46,10 @@ const verifyToken = (req, res, next) => {
             return next(new AppError('토큰 유효시간 지남', 401));
         }
 
-        req.user = { userId: decoded.userId };
+        req.user = { 
+            userId: decoded.id,
+            username: decoded.name 
+        };
         next();
     } catch (error) {
         if (error instanceof AppError) {
