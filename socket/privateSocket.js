@@ -30,12 +30,10 @@ function privateSocketConnect(server) {
 
     // Admin UI 미들웨어 적용
     instrument(io, {
-        auth: {
-            type: "basic",
-            username: "admin",
-            password: "admin123" // 실제 운영 환경에서는 더 강력한 비밀번호 사용
-        },
-        mode: "development"
+        auth: false,
+        mode: "development",
+        namespaceName: "/admin",
+        serverId: "admin-server"
     });
 
     // Redis 초기화
@@ -45,6 +43,29 @@ function privateSocketConnect(server) {
 
     // 연결 이벤트 처리
     io.on('connection', async (socket) => {
+        // Admin UI 인증 확인
+        logger.info('소켓 연결 시도', {
+            socketId: socket.id,
+            auth: socket.handshake.auth,
+            headers: socket.handshake.headers
+        });
+
+        const isAdmin = socket.handshake.auth && 
+                       socket.handshake.auth.username === 'admin' && 
+                       socket.handshake.auth.password === 'admin123';
+
+        logger.info('Admin 인증 결과', {
+            socketId: socket.id,
+            isAdmin: isAdmin,
+            authData: socket.handshake.auth
+        });
+
+        if (isAdmin) {
+            socket.data.isAdmin = true;
+            logger.info('Admin UI가 연결되었습니다.', { socketId: socket.id });
+            return;
+        }
+
         try {
             logger.info('새로운 연결 시도', {
                 socketId: socket.id,

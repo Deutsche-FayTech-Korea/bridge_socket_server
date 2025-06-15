@@ -548,3 +548,15 @@
 {"level":"error","message":"쿠키가 없음","socketId":"T4tY5agx5qsOW2QXAAAJ","timestamp":"2025-06-15T07:07:14.628Z"}
 {"level":"error","message":"쿠키가 없음","socketId":"U1cnXTjrYOSBux_KAAAL","timestamp":"2025-06-15T07:07:36.694Z"}
 {"error":{"code":401,"message":"토큰 유효시간 지남","stack":"Error: 토큰 유효시간 지남\n    at verifyToken (D:\\workspaces\\nodejs\\socketio\\common\\error\\jwt.js:46:25)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at logResponse (D:\\workspaces\\nodejs\\socketio\\common\\error\\errorHandler.js:131:9)\n    at Layer.handle [as handle_request] (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\workspaces\\nodejs\\socketio\\node_modules\\express\\lib\\router\\index.js:286:9","type":"Operational"},"level":"error","message":"에러 발생","request":{"body":{},"ip":"127.0.0.1","method":"GET","params":{},"path":"/api/room/join/","query":{"mode":"public","roomId":"67c33914677a"},"url":"/api/room/join/?mode=public&roomId=67c33914677a"},"timestamp":"2025-06-15T07:10:42.815Z","user":"anonymous"}
+{"level":"error","message":"쿠키가 없음","socketId":"dR-hF1WaWMB59luwAAAD","timestamp":"2025-06-15T07:15:55.226Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"jYOSkVg919D_cvDjAAAJ","timestamp":"2025-06-15T07:17:06.542Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"S21mO1MSqV1yB-YfAAAL","timestamp":"2025-06-15T07:17:24.558Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"8WcEjhsWiM6iL0FkAAAN","timestamp":"2025-06-15T07:17:29.222Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"Wqe2D77QaH2DsYcWAAAV","timestamp":"2025-06-15T07:17:52.332Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"qOZ0dYFBMQZO2053AAAD","timestamp":"2025-06-15T07:20:52.117Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"8NxxegJ-oxL98SZGAAAF","timestamp":"2025-06-15T07:21:05.340Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"HWPinKnlSzBQULGBAAAN","timestamp":"2025-06-15T07:24:40.668Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"IMJHQHKID-hmkx2hAAAR","timestamp":"2025-06-15T07:24:57.448Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"G3_6zinqAIvwFetLAAAV","timestamp":"2025-06-15T07:26:24.334Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"_kLPRAHKrnn9hhpwAAAi","timestamp":"2025-06-15T07:32:33.058Z"}
+{"level":"error","message":"쿠키가 없음","socketId":"bcKJblxhRzjDiUidAAAk","timestamp":"2025-06-15T07:32:40.398Z"}
