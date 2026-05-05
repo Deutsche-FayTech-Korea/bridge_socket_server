@@ -36,7 +36,38 @@ function registerDrawingHandlers(socket, io) {
         }
     });
     //그리기 이벤트 - 클라이언트 -> 서버 받았을 때
-    socket.on('drawLine', ({roomId, data, mode}) => {
+    socket.on('drawLinePreview', ({ roomId, strokeId, userName, data }) => {
+        try {
+            if (!roomId || !strokeId || !data) {
+                logger.error('Invalid live stroke preview data', {
+                    roomId,
+                    strokeId,
+                    socketId: socket.id,
+                    timestamp: new Date().toISOString()
+                });
+                throw new AppError('Invalid live stroke preview data', 400);
+            }
+
+            socket.to(roomId).emit('drawLinePreview', {
+                roomId,
+                strokeId,
+                userName,
+                data,
+                socketId: socket.id,
+                timestamp: new Date().toISOString()
+            });
+        } catch (error) {
+            logger.error('Live stroke preview handling failed', {
+                roomId,
+                strokeId,
+                socketId: socket.id,
+                error: error.message
+            });
+        }
+    });
+
+    // Final committed stroke relay.
+    socket.on('drawLine', ({roomId, strokeId, userName, data, mode}) => {
         try {
             if (!roomId || !data) {
                 logger.error('잘못된 그리기 데이터', {
@@ -48,6 +79,9 @@ function registerDrawingHandlers(socket, io) {
             }
             
             socket.to(roomId).emit('drawLine', {
+                roomId,
+                strokeId,
+                userName,
                 data,
                 socketId: socket.id,
                 timestamp: new Date().toISOString()
