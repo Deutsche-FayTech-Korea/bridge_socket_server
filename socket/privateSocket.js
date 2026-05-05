@@ -6,6 +6,7 @@ const { registerRoomHandlers } = require('./handlers/roomHandler');
 const { registerDrawingHandlers } = require('./handlers/drawingHandler');
 const { registerCursorHandlers } = require('./handlers/cursorHandler');
 const { instrument } = require("@socket.io/admin-ui");
+const { getClientOrigins } = require('../config/clientOrigins');
 
 let io;
 
@@ -13,10 +14,7 @@ function privateSocketConnect(server) {
     // Socket.IO 초기화
     io = new Server(server, {
         cors: {
-            origin: [
-                process.env.CLIENT_URL || 'http://localhost:3000',
-                'https://admin.socket.io', // 공식 Admin UI 주소
-            ],
+            origin: getClientOrigins({ includeAdmin: true }),
             methods: ['GET', 'POST'],
             credentials: true,
             allowedHeaders: ['Content-Type', 'Authorization', 'Cookie']

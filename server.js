@@ -10,10 +10,11 @@ const { errorHandler, logUtils } = require('./common/error/errorHandler');
 const verifyToken = require('./common/error/jwt');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
+const { getClientOrigins } = require('./config/clientOrigins');
 
 // CORS 설정
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: getClientOrigins(),
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
@@ -75,7 +76,7 @@ const privateIo = privateSocketConnect(http);
 const publicIo = publicSocketConnect(http);
 
 // 서버 시작
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || process.env.SOCKET_PORT || 8000;
 http.listen(PORT, '0.0.0.0', () => {
     console.log('=================================');
     console.log(`🚀 서버가 포트 ${PORT}에서 실행 중입니다.`);

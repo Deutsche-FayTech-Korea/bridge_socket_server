@@ -6,7 +6,7 @@ config:
 
 scenarios:
   - name: "Register Test"
-    target: "https://www.kimtuna.kr"
+    target: "http://localhost:2334"
     beforeScenario: "setVariables"
     flow:
       # - post:
@@ -26,7 +26,7 @@ scenarios:
 
 
   - name: "Create Room Test"
-    target: "localhost:8000"
+    target: "http://localhost:8000"
     beforeScenario: "setVariables"
     flow:
       # 1. 먼저 roomId 생성

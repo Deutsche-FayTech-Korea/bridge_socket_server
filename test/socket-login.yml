@@ -1,5 +1,5 @@
 config:
-  target: "https://www.kimtuna.kr"
+  target: "http://localhost:2334"
   phases:
     - duration: 5
       arrivalRate: 5
@@ -33,7 +33,7 @@ scenarios:
 
 
   - name: "Create Room Test"
-    target: "localhost:8000"
+    target: "http://localhost:8000"
     beforeScenario: "setVariables"
     flow:
       # 1. 먼저 roomId 생성
